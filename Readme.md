@@ -1,8 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Татьяна Петрова](https://up.htmlacademy.ru/adaptive/15/user/796091).
-* Наставник: Сергей Рубец
-(https://htmlacademy.ru/profile/amator).
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator).
 
 ---
 
