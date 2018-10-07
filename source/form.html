@@ -4,30 +4,32 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="main-body">
   <header class="page-header">
     <nav class="main-nav">
       <a class="main-nav__logo-link" href="index.html">
-        <img class="main-nav__logo-image" src="#" width="75" height="24" alt="Пинк">
+        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Пинк">
       </a>
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-        <img src="#" width="" height="" alt="Кнопка открытия меню">
+        <img src="img/icon-menu-burger.svg" width="50" height="25" alt="Кнопка открытия меню">
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="/">Конкурс</a>
+            <a class="site-list__link" href="/">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -35,7 +37,9 @@
   </header>
 
   <main class="page-main">
-    <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page-main__wrapper">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
 
     <section class="user-form">
       <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
@@ -139,13 +143,13 @@
 
       </form>
 
-      <p class="user-form__comment">* - обязательные поля</p>
+      <p class="user-form__comment"><span class="user-form__mark">*</span> - обязательные поля</p>
     </section>
 
   </main>
 
   <footer class="page-footer">
-    <img class="page-footer__footer-logo" src="#" width="" height="" alt="логтоип PINK">
+    <img class="page-footer__footer-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="логтоип PINK">
     <div class="page-footer__social-wrapper">
       <ul class="page-footer__social-list social-list">
         <li class="page-footer__item social-item">
@@ -166,7 +170,7 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано<a href="https://htmlacademy.ru/intensive/adaptive"><img src="#" width="" height="" alt="логотип HTML Academy"></a></p>
+      <p class="copyright__text">Разработано<a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy"></a></p>
     </div>
   </footer>
 </body>

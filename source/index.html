@@ -4,28 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="main-body">
   <header class="page-header">
     <nav class="main-nav">
-      <img class="main-nav__logo-image" src="#" width="75" height="24" alt="Пинк">
+      <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Пинк">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-        <img src="#" width="" height="" alt="Кнопка открытия меню">
+        <img src="img/icon-menu-burger.svg" width="50" height="25" alt="Кнопка открытия меню">
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="/">Главная</a>
+            <a class="site-list__link" href="/">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -35,8 +37,8 @@
     <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
 
     <section class="promo">
-      <img class="promo__promo-image" width="" height="" alt="так работает приложение">
-      <a class="promo__download button button--download">Скачать приложение</a>
+      <img src="img/iphone-hand-mobile@1x.png" class="promo__promo-image" width="258" height="286" alt="так работает приложение">
+      <a class="promo__download button button--download" href="/">Скачать приложение</a>
       <ul class="promo__list os-list">
         <li class="os-list__item">
           <a class="os-list__link" href="https://www.apple.com/itunes/working-itunes/market/">
@@ -61,7 +63,7 @@
       <h2 class="visually-hidden">Возможности приложения</h2>
 
       <p class="features__intro">Устали от серости мегаполиса?</p>
-      <p class="features__intro">Нам есть, что вам предложить</p>
+      <p class="features__intro">Нам есть, что вам предложить!</p>
 
       <div class="features__wrapper">
         <ul class="features__list">
@@ -83,6 +85,7 @@
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
         </ul>
+        <img class="features-image" width="157" height="320" src="img/iphone-screen-mobile@1x.png">
       </div>
 
     </section>
@@ -104,9 +107,9 @@
         <input class="toggle-container__radio-button radio-button" type="radio" id="button-3" name="page" aria-label="Третья страница">
 
         <div class="toggle-container__controls controls">
-          <label class="controls__item-1" for="button-1">Первый</label>
-          <label class="controls__item-2" for="button-2">Второй</label>
-          <label class="controls__item-3" for="button-3">Третий</label>
+          <label class="controls__item-1 visually-hidden" for="button-1">Первый</label>
+          <label class="controls__item-2 visually-hidden" for="button-2">Второй</label>
+          <label class="controls__item-3 visually-hidden" for="button-3">Третий</label>
         </div>
       </div>
     </section>
@@ -114,17 +117,17 @@
     <section class="price">
       <h2 class="visually-hidden">Варианты сборки</h2>
       <table class="price__price-table price-table">
-        <tr class="price-table__line table-title">
-          <th class="table-title__item">Стандарт 3,99 USD</th>
+        <tr class="price-table__line price-table__line--title">
+          <th class="price-table__item price-table__item--title">Стандарт<span class="price-table__item--price">3,99 USD</span></th>
         </tr>
-        <tr class="price-table__line table-content">
-          <th class="table-content__item">Розовый фильтр</th>
+        <tr class="price-table__line price-table__line--content">
+          <th class="price-table__item">Розовый фильтр</th>
         </tr>
-        <tr class="price-table__line table-content">
-          <th class="table-content__item">Смайлики</th>
+        <tr class="price-table__line price-table__line--content">
+          <th class="price-table__item">Смайлики</th>
         </tr>
-        <tr class="price-table__line table-content">
-          <th class="table-content__item">Комментарии</th>
+        <tr class="price-table__line price-table__line--content">
+          <th class="price-table__item">Комментарии</th>
         </tr>
       </table>
       <div class="price__toggle toggle-container">
@@ -136,9 +139,9 @@
         <input class="toggle-container__radio-button radio-button" type="radio" id="button-3" name="page" aria-label="Третья страница">
 
         <div class="toggle-container__controls controls">
-          <label class="controls__item-1" for="button-1">Первый</label>
-          <label class="controls__item-2" for="button-2">Второй</label>
-          <label class="controls__item-3" for="button-3">Третий</label>
+          <label class="controls__item-1 visually-hidden" for="button-1">Первый</label>
+          <label class="controls__item-2 visually-hidden" for="button-2">Второй</label>
+          <label class="controls__item-3 visually-hidden" for="button-3">Третий</label>
         </div>
       </div>
     </section>
@@ -148,14 +151,14 @@
       <p class="contacts__intro">Остались вопросы?</p>
       <p class="contacts__intro">Свяжитесь с нами</p>
       <div class="contacts__wrapper">
-        <p class="contacts__item">Звоните <span class="contacts__way">+7(812)555-66-66</span>
+        <p class="contacts__item">Звоните: <span class="contacts__way">+7(812)555-66-66</span>
         </p>
-        <p class="contacts__item">Пишите <span class="contacts__way">mail@htmlacademy.ru</span>
+        <p class="contacts__item">Пишите: <span class="contacts__way">mail@htmlacademy.ru</span>
         </p>
-        <p class="contacts__item">Приезжайте в гости <span class="contacts__way">ул.Большая Конюшенная,19/8</span>
+        <p class="contacts__item">Приезжайте в гости: <span class="contacts__way">ул. Большая Конюшенная,19/8</span>
         </p>
       </div>
-      <img class="contacts__map" src="#" width="" height="" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </section>
   </main>
 </body>
