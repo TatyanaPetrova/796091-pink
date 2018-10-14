@@ -1,3 +1,19 @@
 .main-nav {
-  background-color: @blue;
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media(min-width: @desktop-width) {
+  .main-nav__wrapper {
+    .desktop-container();
+  }
+  
+  .main-nav {
+    display: flex;
+    width: 700px;
+    padding-top: 40px;
+    margin: 0;
+    margin-left: 90px;
+  }
 }

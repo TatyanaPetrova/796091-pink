@@ -1,4 +1,16 @@
+.features {
+  margin-bottom: 50px;
+}
+
+.features__container {
+  .mobile-container();
+}
+
 .features__intro {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 45px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -6,22 +18,131 @@
 }
 
 .features__wrapper {
+  width: 100%;
   background-color: @gray;
 }
 
 .features__list {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
   list-style: none;
 }
 
+.features__item {
+  margin-bottom: 40px;
+}
+
 .features__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: center;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .features__description {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: @blue;
+}
+
+.features-image {
+  margin-left: 25%;
+}
+
+.features__image--tablet,
+.features__images {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .features__container {
+    .tablet-container();
+    display: flex;
+  }
+
+  .features__wrapper-intro {
+    margin-bottom: 55px;
+  }
+
+  .features__intro {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 0;
+  }
+
+  .features__wrapper {
+    width: 100%;
+  }
+
+  .features__image--mobile,
+  .feature__images {
+    display: none;
+  }
+  
+  .features__image--tablet {
+    display: block;
+  }
+
+  .features__title {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    margin-bottom: 0;
+  }
+
+  .features__container {
+    .desktop-container();
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .features__wrapper-intro {
+    margin: auto;
+    margin-bottom: 85px;
+  }
+
+  .features__image--mobile,
+  .features__image--tablet {
+    display: none;
+  }
+
+  .features__images {
+    display: block;
+  }
+
+  .features-images__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .features__list {
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+  }
+
+  .features__item {
+    width: 248px;
+    text-align: center;
+  }
+
+  .features__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }

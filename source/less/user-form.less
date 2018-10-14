@@ -1,4 +1,13 @@
+.user-form__wrapper {
+  .mobile-container();
+}
+
+.user-form__container {
+  .mobile-container();
+}
+
 .user-form__intro {
+  text-align: center;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -14,4 +23,46 @@
 
 .user-form__mark {
   color: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .user-form__wrapper {
+    .tablet-container();
+  }
+
+  .user-form__container {
+    .tablet-container();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-form__wrap {
+    .desktop-container();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-form__wrapper {
+    display: flex;
+    .desktop-container();
+    margin-bottom: 90px;
+  }
+
+  .user-form__container {
+    display: flex;
+    flex-direction: column;
+    order: -2;
+    width: 433px;
+    margin: 0;
+  }
+
+  .user-form__intro {
+    width: 600px;
+    margin: auto;
+  }
+
+  .user-form__user-record {
+    display: flex;
+  }
 }

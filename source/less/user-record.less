@@ -1,6 +1,12 @@
 .user-record {
+  margin: 0;
+  padding: 0;
   border: 0 none;
   background-color: @gray;
+}
+
+.user-record__wrapper {
+  .mobile-container();
 }
 
 .user-record__sign {
@@ -12,5 +18,37 @@
 }
 
 .user-record__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .user-record__wrapper {
+    .tablet-container();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-record {
+    display: flex;
+    order: 1;
+    background-color: @white;
+  }
+
+  .user-record__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 433px;
+  }
+
+  .user-record__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 820px;
+  }
+
+  .user-record__item {
+    margin-right: 50px;
+  }
 }

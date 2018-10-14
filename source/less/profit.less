@@ -1,0 +1,53 @@
+.profit {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .profit {
+    display: block;
+  }
+  
+  .profit__image {
+    width: 650px;
+  }
+  
+  .profit__wrapper {
+    .tablet-container();
+    display: flex;
+  }
+  
+  .profit__description {
+    margin-left: 70px;
+  }
+  
+  .profit__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+  
+  .profit__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: @blue;
+  }
+  
+  .profit__link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: @pink;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .profit {
+    background-color: @gray;
+    margin-bottom: 70px;
+  }
+  
+  .profit__wrapper {
+    .desktop-container();
+  }
+}

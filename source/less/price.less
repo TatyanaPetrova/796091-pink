@@ -1,3 +1,28 @@
 .price {
+  margin-bottom: 50px;
   background-color: @gray;
+}
+
+.price__container {
+  .mobile-container();
+}
+
+.price__price-table {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .price {
+    margin-bottom: 60px;
+  }
+
+  .price__container {
+    .tablet-container();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__container {
+    .desktop-container();
+  }
 }

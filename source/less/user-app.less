@@ -1,4 +1,6 @@
 .user-app {
+  margin: 0;
+  padding: 0;
   border: 0 none;
   background-color: @gray;
 }
@@ -12,5 +14,23 @@
 }
 
 .user-app__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+@media (min-width: @desktop-width) {
+  .user-app {
+    display: flex;
+    order: -1;
+    background-color: @white;
+  }
+
+  .user-app__container {
+    display: flex;
+    flex-direction: column;
+    width: 433px;
+    margin: 0;
+  }
+
 }

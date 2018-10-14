@@ -1,6 +1,25 @@
+.photos__wrapper {
+  .mobile-container();
+}
+
 .photos__intro {
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @blue;
+}
+
+
+@media (min-width: @tablet-width) {
+  .photos__wrapper {
+    .tablet-container();
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__wrapper {
+    .desktop-container();
+    text-align: center;
+  }
 }

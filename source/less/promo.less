@@ -1,9 +1,27 @@
 .promo {
+  position: absolute;
+  top: 395px;
+  z-index: 10;
+  margin: 0;
+  width: 100%;
   background-color: @blue;
 }
 
-.promo__promo-image {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+.promo__wrapper {
+  .mobile-container();
+}
+
+.promo__image--tablet,
+.promo__image--desktop,
+.promo__intro {
+  display: none;
+}
+
+.promo__image--mobile {
+  position: absolute;
+  left: 0px;
+  top: -288px;
+  z-index: -1;
 }
 
 .promo__availability {
@@ -11,4 +29,65 @@
   line-height: 24px;
   font-weight: 300;
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    position: absolute;
+    top: 125px;
+    z-index: 10;
+    background-color: transparent;
+  }
+
+  .promo__wrapper {
+    .tablet-container();
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    padding-right: 355px;
+  }
+
+  .promo__image--mobile,
+  .promo__image--desktop {
+    display: none;
+  }
+
+  .promo__image--tablet {
+    position: absolute;
+    top: 59px;
+    left: 0px;
+    z-index: -1;
+    display: block;
+  }
+
+  .promo__intro {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 300;
+    color: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    .desktop-container();
+    width: 245px;
+    padding-right: 760px;
+  }
+
+  .promo__image--mobile,
+  .promo__image--tablet {
+    display: none;
+  }
+
+  .promo__image--desktop {
+    display: block;
+    position: absolute;
+    top: 83px;
+    left: 450px;
+    z-index: -1;
+  }
+
 }
