@@ -1,6 +1,19 @@
 .review {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 35px;
+  background-color: @white;
+}
+
+.review::before {
+  content: url(../img/bg-triangle-white.svg);
+  position: absolute;
+  top: 285px;
+  width: inherit;
+}
+
+.review__container {
   .mobile-container();
-  margin-bottom: 120px;
 }
 
 .review__quote {
@@ -12,12 +25,14 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 28px;
   padding: 0;
+  padding-top: 43px;
 }
 
 .review__title {
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -27,6 +42,8 @@
 .review__text {
   margin: 0;
   padding: 0;
+  width: 282px;
+  text-align: center;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -38,22 +55,31 @@
 }
 
 @media (min-width: @tablet-width) {
-  .review {
+  .review__container {
     .tablet-container();
+  }
+  
+  .review::before {
+    top: 255px;
   }
 
   .review__item {
     width: 100%;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   .review__text {
-    margin-bottom: 50px;
+    width: 100%;
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .review__title {
     order: 1;
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .review__title-sign {

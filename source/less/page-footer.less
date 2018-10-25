@@ -14,9 +14,15 @@
 
 .page-footer__form {
   display: block;
+  margin-bottom: -9px;
 }
 
 .page-footer__footer-logo {
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.page-footer__social-wrapper {
   margin: auto;
 }
 
@@ -28,18 +34,43 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     display: block;
+    margin-top: 30px;
+  }
+
+  .page-footer__social-wrapper {
+    margin: 0;
   }
 
   .page-footer__wrapper {
     .tablet-container();
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+  }
+
+  .page-footer__footer-logo {
+    margin: 0;
+  }
+  
+  .page-footer__copyright {
+    margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer__wrapper {
     .desktop-container();
+    display: flex;
+  }
+
+  .page-footer__social-wrapper {
+    margin-left: 28px;
+  }
+
+  .page-footer__footer-logo {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
   }
 }

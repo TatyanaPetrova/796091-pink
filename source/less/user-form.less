@@ -1,12 +1,17 @@
 .user-form__wrapper {
   .mobile-container();
+
 }
 
 .user-form__container {
   .mobile-container();
+  margin-bottom: 45px;
 }
 
 .user-form__intro {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
   text-align: center;
   font-size: 14px;
   line-height: 30px;
@@ -14,7 +19,13 @@
   color: @blue;
 }
 
+.user-form__intro-large {
+  display: none;
+}
+
 .user-form__comment {
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
@@ -25,13 +36,60 @@
   color: @pink;
 }
 
+.user-form__mark-large {
+  display: none;
+}
+
+.user-form__wrapper--feedback {
+  margin-bottom: 45px;
+}
+
 @media (min-width: @tablet-width) {
+  .user-form__wrap {
+    .tablet-container();
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 345px;
+  }
+
   .user-form__wrapper {
     .tablet-container();
+    margin-bottom: 20px;
   }
 
   .user-form__container {
     .tablet-container();
+    display: flex;
+    flex-direction: column;
+    order: -2;
+  }
+
+  .user-form__intro {
+    margin-left: 39px;
+    margin-bottom: 74px;
+    width: 540px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .user-form__intro-large {
+    display: inline-block;
+  }
+
+  .user-form__user-record {
+    display: flex;
+    order: 2;
+  }
+
+  .user-form__button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-form__comment {
+    width: auto;
+    margin-left: 135px;
+    margin-top: 20px;
   }
 }
 
@@ -49,20 +107,53 @@
     margin-bottom: 90px;
   }
 
+  .user-form__wrapper--feedback {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 57px;
+  }
+
   .user-form__container {
     display: flex;
     flex-direction: column;
     order: -2;
-    width: 433px;
+    width: 432px;
     margin: 0;
+    margin-top: -2px;
+    margin-bottom: 4px;
   }
 
   .user-form__intro {
-    width: 600px;
+    width: 785px;
+    padding: 0;
     margin: auto;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @blue;
   }
 
   .user-form__user-record {
     display: flex;
   }
+
+  .user-form__intro-large {
+    display: inline-block;
+  }
+
+  .user-form__button-container {
+    display: flex;
+    align-items: flex-start;
+    width: 940px;
+  }
+
+  .user-form__comment {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 315px;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
 }

@@ -1,5 +1,53 @@
+.copyright {
+  display: flex;
+  width: 154px;
+}
+
 .copyright__text {
+  display: flex;
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+  margin-top: -14px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+
+.copyright__link {
+  padding-left: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 95px;
+    width: 154px;
+  }
+  
+  .copyright__link {
+    margin-top: -5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 95px;
+    width: 154px;
+  }
+
+  .copyright__text {
+    display: flex;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .copyright__link {
+    padding-left: 14px;
+  }
 }
