@@ -44,21 +44,8 @@
   margin-top: 30px;
 }
 
-.contacts::after {
-  content: url(../img/bg-triangle-white-footer.svg);
-  position: absolute;
-  top: 342px;
-  left: -140px;
-}
-
 .contacts__map {
   width: 100%;
-  height: 200px;
-}
-
-.contacts__map--tablet,
-.contacts__map--desktop {
-  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -76,37 +63,54 @@
   }
 
   .contacts__wrapper {
+    position: relative;
+    z-index: 50;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
     margin-top: 42px;
   }
-  
+
   .contacts__item {
     margin-bottom: 48px;
   }
   
+  .contacts__item--call {
+    margin-left: 45px;
+  }
+
   .contacts__item--adress {
+    margin-bottom: 29px;
+    margin: auto;
     width: 210px;
   }
-
-  .contacts__map {
-    display: none;
-  }
-
-  .contacts__map--tablet {
-    display: block;
-    width: 100%;
-    height: 355px;
-  }
   
+  .contacts__item--mail {
+    margin-left: 96px;
+  }
+
   .contacts__way {
     margin-top: 2px;
   }
-  
-  .contacts::after {
-    top: 368px;
-    left: 30px;
+
+  .contacts__map-wraper {
+    position: relative;
+  }
+
+  .contacts__map-wraper::after {
+    content: " ";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/bg-triangle-white-footer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .contacts__map {
+    height: 401px;
   }
 }
 
@@ -114,22 +118,44 @@
   .contacts__container {
     .desktop-container();
   }
+  
+  .contacts__wrapper {
+    margin-top: 53px;
+  }
 
   .contacts__item--adress {
     order: -1;
+    margin-top: 0px;
+    margin-left: 111px;
   }
 
   .contacts__item--call {
     order: -1;
   }
-
-  .contacts__map--tablet,
-  .contacts__map--mobile {
-    display: none;
+  
+  .contacts__item--mail {
+    margin-right: 29px;
   }
-
-  .contacts__map--desktop {
-    display: block;
-    width: 100%;
+  
+  .contacts__way {
+    margin-top: 24px;
+  }
+  
+  .contacts__intro {
+    font-size: 50px;
+    line-height: 63px;
+  }
+  
+  .contacts__intro--connection {
+    width: 432px;
+  }
+  
+  .contacts__map {
+    height: 502px;
+  }
+  
+  .contacts__map-wraper::after {
+    top: -59px;
+    height: 165px;
   }
 }

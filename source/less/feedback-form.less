@@ -45,13 +45,13 @@
 }
 
 .feedback-form__container {
-  margin-bottom: 23px;
+  margin-bottom: 16px;
 }
 
 .feedback-form__comment-block {
   margin: 0;
   padding: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .feedback-form__user-data:-ms-input-placeholder {
@@ -171,12 +171,12 @@
   .feedback-form__item--contact {
     flex-direction: column-reverse;
     margin-left: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     width: 384px;
   }
 
   .feedback-form__user-data {
-    padding-left: 17px;
+    padding-left: 20px;
     width: 525px;
   }
 
@@ -185,8 +185,10 @@
   }
 
   .feedback-form__user-data--contact {
-    width: 500px;
     margin-bottom: 10px;
+    padding-left: 16px;
+    padding-top: 25px;
+    width: 500px;
   }
 
   .feedback-form__sign {
@@ -246,7 +248,7 @@
     display: flex;
     flex-direction: column;
     order: 3;
-    margin-bottom: 55px;
+    margin-bottom: 0px;
   }
 
   .feedback-form__title {
@@ -254,7 +256,7 @@
     display: inline-block;
     margin: 0;
     padding: 0;
-    margin-top: -9px;
+    margin-top: -13px;
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 30px;
@@ -371,17 +373,33 @@
     margin-bottom: 28px;
     text-align: center;
   }
+  
+  .feedback-form__comment-sign::before {
+    width: 337px;
+    height: 215px;
+  }
+  
+  .feedback-form__comment-sign::after {
+    width: 337px;
+    height: 215px;
+  }
 
   .feedback-form__comment {
     box-sizing: border-box;
     width: 820px;
     margin: auto;
-    padding-top: 23px;
-    padding-left: 17px;
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-bottom: 14px;
   }
 
   .feedback-form__comment-block {
-    margin-bottom: 110px;
+    padding-bottom: 44px;
+    margin-bottom: 65px;
+  }
+  
+  .feedback-form__button {
+    margin-bottom: 0px;
   }
 
 }

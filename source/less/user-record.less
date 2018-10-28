@@ -132,12 +132,17 @@
   .user-record__list {
     margin-left: 50px;
   }
+
+  .user-record__item {
+    margin-left: 68px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .user-record {
     display: flex;
     order: 1;
+    margin-bottom: 50px;
     background-color: @white;
   }
 
@@ -150,21 +155,51 @@
   .user-record__sign {
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 0px;
+  }
+
+  .user-record__sign::before {
+    left: -281px;
+    width: 250px;
+  }
+
+  .user-record__sign::after {
+    right: -282px;
+    width: 251px;
   }
 
   .user-record__list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 950px;
-    margin-bottom: 50px;
+    margin-left: 117px;
+    padding-bottom: 11px;
   }
 
   .user-record__item {
     margin: 0;
     padding: 0;
-    margin-left: 118px;
     margin-bottom: 50px;
+    margin-right: 118px;
     width: 198px;
+  }
+
+  .user-record__item--self {
+    order: -10;
+  }
+
+  .user-record__item--star {
+    order: -9;
+    margin-right: 96px;
+  }
+
+  .user-record__item--strong {
+    order: -8;
+  }
+
+  .user-record__item--gift {
+    margin-right: 96px;
   }
 
   .user-record__checkbox {

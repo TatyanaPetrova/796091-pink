@@ -13,6 +13,7 @@
    border: none;
    color: @white;
    background-color: #2aab6d;
+   cursor: pointer;
  }
 
  .button--download {
@@ -25,6 +26,17 @@
    border: 2px solid @white;
    border-radius: 50px;
  }
+
+.button--download:hover {
+  background-color: @white;
+  color: @pink;
+}
+
+.button--download:focus {
+  background-color: @white;
+  color: #f1becc;
+  
+}
 
  .button--post {
    padding-left: 3px;
@@ -52,15 +64,40 @@
    color: #dddfe0;
  }
 
+ .button-heart {
+   width: 5px;
+   height: 5px;
+   border: 0;
+   background-color: transparent;
+   cursor: pointer;
+ }
+
  @media(min-width: @tablet-width) {
    .button {
+     width: 260px;
+     font-size: 18px;
+   }
+   
+   .button--download {
+     width: 296px;
+   }
+   
+   .button--feedback {
      width: 300px;
-     font-size: 21px;
    }
  }
 
  @media(min-width: @desktop-width) {
    .button {
+     width: 183px;
+   }
+   
+   .button--download {
+     width: 300px;
+     font-size: 21px;
+   }
+   
+    .button--feedback {
      width: 300px;
    }
  }

@@ -1,12 +1,13 @@
 .photos__wrapper {
   .mobile-container();
-  margin-bottom: 48px;
+  margin-bottom: 49px;
   text-align: center;
 }
 
 .photos__intro {
-  margin: 0;
+  margin: auto;
   padding: 0;
+  width: 245px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -17,23 +18,25 @@
 @media (min-width: @tablet-width) {
   .photos__wrapper {
     .tablet-container();
-    margin-bottom: 80px;
+    margin-bottom: 76px;
   }
   
   .photos__intro {
     display: inline-block;
+    width: 450px;
     font-size: 18px;
     line-height: 30px;
-  }
-  
-  .photos-list__image--main {
-    height: 507px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photos__wrapper {
     .desktop-container();
+    margin-bottom: 88px;
     text-align: center;
+  }
+  
+  .photos__intro {
+    width: 600px;
   }
 }

@@ -17,32 +17,31 @@
         <div class="page-header__navigation">
           <div class="page-header__navigation-wrapper">
             <picture>
-              <source media="min-width: 1200px" srcset="img/logo-pink-white-desktop.svg">
-              <source media="min-width: 660px" srcset="img/logo-pink-white-tablet.svg">
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
               <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Пинк">
             </picture>
           </div>
 
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
           </button>
-
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="/">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
         </div>
+      </div>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="/">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -108,6 +107,13 @@
       </div>
       <div class="features__wrapper">
         <div class="features__container">
+         
+          <div class="features__images features-images__wrapper">
+            <img class="features__images" width="292" height="302" src="img/iphone-screen-1-desktop@1x.png">
+            <img class="features__images" width="292" height="302" src="img/iphone-screen-2-desktop@1x.png">
+            <img class="features__images" width="292" height="302" src="img/iphone-screen-3-desktop@1x.png">
+          </div>
+          
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__title">Поднимает настроение</h3>
@@ -127,14 +133,13 @@
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
           </ul>
+
           <div class="features__image-wrap">
-            <img class="features__image features__image--mobile" width="157" height="320" src="img/iphone-screen-mobile@1x.png">
-            <img class="features__image features__image--tablet" width="268" height="481" src="img/iphone-screen-3-tablet@1x.png">
-          </div>
-          <div class="features__images features-images__wrapper">
-            <img class="features__image features__image--desktop" width="292" height="302" src="img/iphone-screen-1-desktop@1x.png">
-            <img class="features__image features__image--desktop" width="292" height="302" src="img/iphone-screen-2-desktop@1x.png">
-            <img class="features__image features__image--desktop" width="292" height="302" src="img/iphone-screen-3-desktop@1x.png">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+              <img class="features__image" width="157" height="320" src="img/iphone-screen-mobile@1x.png">
+            </picture>
           </div>
         </div>
       </div>
@@ -144,8 +149,14 @@
     <section class="profit">
       <h1 class="visually-hidden">Эффект от использования приложения</h1>
       <div class="profit__wrapper">
+        <div class="profit__image-wrapper">
+          <svg class="profit__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+            <path class="profit__image-fill" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" />
+          </svg>
+        </div>
+
         <div class="profit__description">
-          <h2 class="profit__title">Эффект<br> на 24 часа!</h2>
+          <h2 class="profit__title">Эффект на 24 часа!</h2>
           <p class="profit__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
           <a class="profit__link" href="/">Узнать больше об исследовании</a>
         </div>
@@ -180,9 +191,9 @@
           <input class="toggle-container__radio-button radio-button" type="radio" id="button-3" name="page" aria-label="Третья страница">
 
           <div class="toggle-container__controls controls">
-            <label class=" controls__item controls__item--1" for="button-1"><span class="visually-hidden">Первый</span></label>
-            <label class=" controls__item controls__item--2" for="button-2"><span class="visually-hidden">Второй</span></label>
-            <label class=" controls__item controls__item--3" for="button-3"><span class="visually-hidden">Третий</span></label>
+            <label class="controls__item controls__item--1" for="button-1"><span class="visually-hidden">Первый</span></label>
+            <label class="controls__item controls__item--2" for="button-2"><span class="visually-hidden">Второй</span></label>
+            <label class="controls__item controls__item--3" for="button-3"><span class="visually-hidden">Третий</span></label>
           </div>
         </div>
       </div>
@@ -205,7 +216,7 @@
               <path fill="#49ca50" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
             </svg>
           </th>
-          <th class="price-table__item price-table__item--content">
+          <th class="price-table__item price-table__item--content price-table__item--content--large">
             <span class="price-table__row">
               <svg class="price-table__image-middle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="24px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                 <path fill="#49ca50" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
@@ -213,7 +224,7 @@
             </span>
           </th>
 
-          <th class="price-table__item price-table__item--content">
+          <th class="price-table__item price-table__item--content price-table__item--content--large">
             <span class="price-table__row">
               <svg class="price-table__image-middle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="24px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                 <path fill="#49ca50" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
@@ -221,7 +232,7 @@
             </span>
           </th>
 
-          <th class="price-table__item price-table__item--content">
+          <th class="price-table__item price-table__item--content price-table__item--content--large">
             <span class="price-table__row">
               <svg class="price-table__image-middle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="24px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                 <path fill="#49ca50" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
@@ -237,7 +248,7 @@
             </svg>
           </th>
 
-          <th class="price-table__item price-table__item--content">
+          <th class="price-table__item price-table__item--content price-table__item--content--large">
             <span class="price-table__row">
               <svg class="price-table__image-middle price-table__image-middle-no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                 <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
@@ -245,7 +256,7 @@
             </span>
           </th>
 
-          <th class="price-table__item price-table__item--content">
+          <th class="price-table__item price-table__item--content price-table__item--content--large">
             <span class="price-table__row">
               <svg class="price-table__image-middle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="24px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                 <path fill="#49ca50" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
@@ -253,7 +264,7 @@
             </span>
           </th>
 
-          <th class="price-table__item price-table__item--content">
+          <th class="price-table__item price-table__item--content price-table__item--content--large">
             <span class="price-table__row">
               <svg class="price-table__image-middle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="24px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                 <path fill="#49ca50" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
@@ -270,7 +281,7 @@
             </svg>
           </th>
 
-          <th class="price-table__item price-table__item--content">
+          <th class="price-table__item price-table__item--content price-table__item--content--large">
             <span class="price-table__row">
               <svg class="price-table__image-middle price-table__image-middle-no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                 <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
@@ -278,7 +289,7 @@
             </span>
           </th>
 
-          <th class="price-table__item price-table__item--content">
+          <th class="price-table__item price-table__item--content price-table__item--content--large">
             <span class="price-table__row">
               <svg class="price-table__image-middle price-table__image-middle-no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                 <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
@@ -286,7 +297,7 @@
             </span>
           </th>
 
-          <th class="price-table__item price-table__item--content">
+          <th class="price-table__item price-table__item--content price-table__item--content--large">
             <span class="price-table__row">
               <svg class="price-table__image-middle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="24px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                 <path fill="#49ca50" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
@@ -316,28 +327,34 @@
       <div class="contacts__container">
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="contacts__intro">Остались вопросы?</p>
-        <p class="contacts__intro contacts__intro--connection">Свяжитесь с нами</p>
+        <p class="contacts__intro contacts__intro--connection">Свяжитесь с нами!</p>
         <div class="contacts__wrapper">
           <p class="contacts__item contacts__item--call">Звоните: <span class="contacts__way">+7 (812) 555-66-66</span>
           </p>
-          <p class="contacts__item">Пишите: <span class="contacts__way">mail@htmlacademy.ru</span>
+          <p class="contacts__item contacts__item--mail">Пишите: <span class="contacts__way">mail@htmlacademy.ru</span>
           </p>
           <p class="contacts__item contacts__item--adress">Приезжайте в гости: <span class="contacts__way">ул. Большая Конюшенная,19/8</span>
           </p>
         </div>
       </div>
-      <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <img class="contacts__map--tablet" src="img/bg-map-tablet@1x.jpg" width="700" height="848" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <img class="contacts__map--desktop" src="img/bg-map-desktop@1x.jpg" width="1200" height="976" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-
+      <div class="contacts__map-wraper">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </picture>
+      </div>
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--index">
     <div class="page-footer__wrapper">
-      <img class="page-footer__footer-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="логтоип PINK">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="page-footer__footer-logo page-footer__footer-logo--index" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="логтоип PINK">
+      </picture>
       <div class="page-footer__social-wrapper">
-        <ul class="page-footer__social-list social-list">
+        <ul class="page-footer__social-list social-list social-list--index">
           <li class="page-footer__item social-item">
             <a class="page-footer__link social-list__social-button" href="#">
               <span class="visually-hidden">Твиттер</span>
@@ -353,7 +370,7 @@
           <li class="page-footer__item social-item">
             <a class="page-footer__link social-list__social-button" href="#">
               <span class="visually-hidden">Фэйсбук</span>
-              <svg class="social-list__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+              <svg class="social-list__icon social-list__icon--facebook" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
                 <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
               </svg>
             </a>
@@ -361,7 +378,7 @@
           <li class="page-footer__item social-item">
             <a class="page-footer__link social-list__social-button" href="#">
               <span class="visually-hidden">Ютуб</span>
-              <svg class="social-list__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+              <svg class="social-list__icon social-list__icon--youtube" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                 <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
               </svg>
             </a>
@@ -369,7 +386,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy"></a></p>
+        <p class="copyright__text">Разработано<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy"></a>
+        </p>
       </div>
     </div>
   </footer>

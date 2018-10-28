@@ -52,6 +52,10 @@
   text-transform: uppercase;
 }
 
+.price-table__item--content--large {
+  display: none;
+}
+
 .price-table__row {
   width: 131px;
   margin-left: 24px;
@@ -113,6 +117,10 @@
     display: flex;
   }
 
+  .price-table__item--content--large {
+    display: flex;
+  }
+
   .price-table__image-middle {
     display: inline-block;
     margin-left: 45px;
@@ -120,7 +128,7 @@
   }
 
   .price {
-    padding-top: 70px;
+    padding-top: 90px;
     padding-bottom: 65px;
     margin-bottom: 45px;
   }
@@ -132,34 +140,79 @@
   .price-table__image {
     display: none;
   }
-  
+
   .price-table__item--title {
     padding-top: 10px;
     padding-bottom: 7px;
     font-size: 16px;
   }
-  
+
   .price-table__item--price {
     font-size: 18px;
   }
-  
+
   .price-table__item--content {
     text-transform: none;
     padding-top: 8px;
     padding-bottom: 0px;
   }
-  
+
   .price-table__row {
     margin-left: 14px;
   }
-  
+
   .price__toggle {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .price {
+    padding-top: 175px;
+    padding-bottom: 92px;
+    margin-bottom: 63px;
+  }
+
   .price__container {
     .desktop-container();
+  }
+
+  .price-table__line {
+    display: flex;
+    width: 940px;
+  }
+
+  .price-table__item--title {
+    margin: 0;
+    padding-top: 16px;
+    padding-left: 5px;
+    padding-bottom: 23px;
+    width: 230px;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .price-table__item--price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .price-table__item--content {
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 9px;
+    width: 232px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .price-table__row {
+    margin-left: 21px;
+    width: 100%;
+  }
+
+  .price-table__image-middle {
+    margin-left: 79px;
   }
 }
