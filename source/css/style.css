@@ -1177,7 +1177,7 @@ input[type="radio"] {
   .features__intro {
     font-size: 40px;
     line-height: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .features__intro--row {
     margin: auto;
@@ -1777,7 +1777,7 @@ input[type="radio"] {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 111px;
   }
   .contacts__item--call {
@@ -3189,7 +3189,7 @@ input[type="radio"] {
     margin-bottom: 65px;
   }
   .feedback-form__button {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 .user-record {
