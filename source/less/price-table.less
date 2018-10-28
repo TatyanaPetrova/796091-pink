@@ -25,3 +25,15 @@
   line-height: 30px;
   font-weight: 300;
 }
+
+.price-table__item--column,
+.price-table__item--empty {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .price-table__item--column,
+  .price-table__item--empty {
+    display: table-cell;
+  }
+}

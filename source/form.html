@@ -4,22 +4,32 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="css/normalize.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="main-body">
-  <header class="page-header">
+  <header class="page-header page-header__form">
     <nav class="main-nav">
-      <a class="main-nav__logo-link" href="index.html">
-        <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Пинк">
-      </a>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-        <img src="img/icon-menu-burger.svg" width="50" height="25" alt="Кнопка открытия меню">
-      </button>
+      <div class="main-nav__container">
+        <div class="page-header__navigation">
+          <div class="page-header__navigation-wrapper">
+            <a class="page-header__logo-link" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="24" alt="Пинк">
+              </picture>
+            </a>
+          </div>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          </button>
+        </div>
+      </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
@@ -34,143 +44,177 @@
         </ul>
       </div>
     </nav>
+    <div class="page-header__wrapper">
+      <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
   </header>
 
   <main class="page-main">
-    <div class="page-main__wrapper">
-      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
-
     <section class="user-form">
-      <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
-      <p class="user-form__intro">Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <div class="user-form__wrapper">
+        <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
+        <p class="user-form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="user-form__intro-large">Пожалуйста, заполните форму ниже:</span></p>
+      </div>
 
       <form class="user-form__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="user-form__wrap">
+          <div class="user-form__container">
+            <p class="feedback-form__item">
+              <label class="feedback-form__sign" for="user-surname">Фамилия:</label>
+              <input class="feedback-form__user-data" type="text" id="user-surname" name="surname" required placeholder="Укажите фамилию *">
+            </p>
 
-        <p class="feedback-form__item">
-          <label class="feedback-form__sign" for="user-surname">Фамилия:</label>
-          <input class="feedback-form__user-data" type="text" id="user-surname" name="surname" required placeholder="Укажите фамилию *">
-        </p>
+            <p class="feedback-form__item">
+              <label class="feedback-form__sign" for="user-name">Имя:</label>
+              <input class="feedback-form__user-data feedback-form__user-data--name" type="text" id="user-name" name="name" required placeholder="Введите ваше имя *">
+            </p>
 
-        <p class="feedback-form__item">
-          <label class="feedback-form__sign" for="user-name">Имя:</label>
-          <input class="feedback-form__user-data" type="text" id="user-name" name="name" required placeholder="Введите ваше имя *">
-        </p>
-
-        <p class="feedback-form__item">
-          <label class="feedback-form__sign" for="user-patronymic">Отчество:</label>
-          <input class="feedback-form__user-data" type="text" id="user-patronymic" name="patronymic" placeholder="Ну и отчество тоже">
-        </p>
-
-        <fieldset class="user-form__user-record user-record">
-          <legend class="user-record__sign">Ваши безбашенные достижения в путешествии</legend>
-          <div class="user-record__wrapper">
-            <ul class="user-record__list">
-
-              <li class="user-record__item">
-                <input class="user-record__checkbox" type="checkbox" name="records" id="made-selfie" checked>
-                <label class="user-record__checkbox-sign" for="made-selfie">Сделал селфи с акулой</label>
-              </li>
-
-              <li class="user-record__item">
-                <input class="user-record__checkbox" type="checkbox" name="records" id="burned" checked>
-                <label for="burned" class="user-record__checkbox-sign">Обгорел на пляже</label>
-              </li>
-
-              <li class="user-record__item">
-                <input class="user-record__checkbox" type="checkbox" name="records" id="saw-celebrity">
-                <label for="saw-celebrity" class="user-record__checkbox-sign">Видел Чака Нориса</label>
-              </li>
-
-              <li class="user-record__item">
-                <input class="user-record__checkbox" type="checkbox" name="records" id="bought-souvenirs">
-                <label for="bought-souvenirs" class="user-record__checkbox-sign">Накупил сувениров</label>
-              </li>
-
-              <li class="user-record__item">
-                <input class="user-record__checkbox" type="checkbox" name="records" id="held-tower" checked>
-                <label for="held-tower" class="user-record__checkbox-sign">Удержал башню</label>
-              </li>
-
-              <li class="user-record__item">
-                <input class="user-record__checkbox" type="checkbox" name="records" id="trashed-hotel">
-                <label for="trashed-hotel" class="user-record__checkbox-sign">Разгромил отель</label>
-              </li>
-
-            </ul>
+            <p class="feedback-form__item">
+              <label class="feedback-form__sign" for="user-patronymic">Отчество:</label>
+              <input class="feedback-form__user-data" type="text" id="user-patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+            </p>
           </div>
-        </fieldset>
-        <p class="feedback-form__item">
-          <label class="feedback-form__sign" for="user-phone">Номер телефона</label>
-          <input class="feedback-form__user-data" type="tel" pattern="7[0-9]{10}" id="user-phone" name="phone" placeholder="Номер, пожалуйста">
-        </p>
+          <fieldset class="user-form__user-record user-record">
+            <div class="user-record__wrapper">
+              <legend class="user-record__sign">Ваши безбашенные достижения в путешествии</legend>
+              <div class="user-record__wrap">
+                <ul class="user-record__list">
 
-        <p class="feedback-form__item">
-          <label class="feedback-form__sign" for="user-mail">Адрес почты</label>
-          <input class="feedback-form__user-data" type="email" id="user-mail" name="mail" required placeholder="Введите почту *">
-        </p>
+                  <li class="user-record__item user-record__item--self">
+                    <input class="user-record__checkbox" type="checkbox" name="records" id="made-selfie" checked>
+                    <label class="user-record__checkbox-sign" for="made-selfie">Сделал селфи с акулой</label>
+                  </li>
 
-        <fieldset class="user-form__user-app user-app">
-          <legend class="user-app__sign">C каким приложением путешествовали?</legend>
-          <div class="user-app__wrapper">
-            <ul class="user-app__list">
+                  <li class="user-record__item user-record__item--sunburn">
+                    <input class="user-record__checkbox" type="checkbox" name="records" id="burned" checked>
+                    <label for="burned" class="user-record__checkbox-sign">Обгорел на пляже</label>
+                  </li>
 
-              <li class="user-app__item">
-                <input class="user-app__radio visually-hidden" type="radio" name="app-group" value="iOS" id="iOS" checked>
-                <label class="user-app__radio-sign" for="IOS">Pink для iOS</label>
-              </li>
+                  <li class="user-record__item user-record__item--star">
+                    <input class="user-record__checkbox" type="checkbox" name="records" id="saw-celebrity">
+                    <label for="saw-celebrity" class="user-record__checkbox-sign">Видел Чака Норриcа</label>
+                  </li>
 
-              <li class="user-app__item">
-                <input class="user-app__radio visually-hidden" type="radio" name="app-group" value="Android" id="Android">
-                <label class="user-app__radio-sign" for="Android">Pink на Android</label>
-              </li>
+                  <li class="user-record__item user-record__item--gift">
+                    <input class="user-record__checkbox" type="checkbox" name="records" id="bought-souvenirs">
+                    <label for="bought-souvenirs" class="user-record__checkbox-sign">Накупил сувениров</label>
+                  </li>
 
-              <li class="user-app__item">
-                <input class="user-app__radio visually-hidden" type="radio" name="app-group" value="Windows" id="Windows">
-                <label class="user-app__radio-sign" for="Windows">Windows Phone</label>
-              </li>
+                  <li class="user-record__item user-record__item--strong">
+                    <input class="user-record__checkbox" type="checkbox" name="records" id="held-tower" checked>
+                    <label for="held-tower" class="user-record__checkbox-sign">Удержал башню</label>
+                  </li>
 
-            </ul>
+                  <li class="user-record__item
+                    user-record__item--rowdy">
+                    <input class="user-record__checkbox" type="checkbox" name="records" id="trashed-hotel">
+                    <label for="trashed-hotel" class="user-record__checkbox-sign">Разгромил отель</label>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </fieldset>
+          <div class="user-form__wrapper user-form__wrapper--feedback">
+            <h3 class="feedback-form__title">Контактная информация</h3>
+            <div class="feedback-form__item-wrapper">
+              <p class="feedback-form__item feedback-form__item--contact">
+                <label class="feedback-form__sign feedback-form__sign--contact" for="user-phone">Номер телефона</label>
+                <input class="feedback-form__user-data feedback-form__user-data--contact" type="tel" pattern="7[0-9]{10}" id="user-phone" name="phone" placeholder="Номер, пожалуйста">
+              </p>
+
+              <p class="feedback-form__item feedback-form__item--contact">
+                <label class="feedback-form__sign feedback-form__sign--contact" for="user-mail">Адрес почты</label>
+                <input class="feedback-form__user-data feedback-form__user-data--contact" type="email" id="user-mail" name="mail" required placeholder="Введите почту *">
+              </p>
+            </div>
           </div>
-        </fieldset>
 
-        <p class="feedback-form__item">
-          <label class="feedback-form__comment-sign" for="user-comment">Опишите свои эмоции</label>
-          <textarea class="feedback-form__comment" name="user-comment" id="user-comment" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </p>
+          <fieldset class="user-form__user-app user-app">
+            <div class="user-form__wrapper user-app__container">
+              <legend class="user-app__sign">C каким приложением путешествовали?</legend>
+              <div class="user-app__wrapper">
+                <ul class="user-app__list">
 
-        <button class="feedback-form__button button button--feedback" type="submit">Отправить форму</button>
+                  <li class="user-app__item">
+                    <input class="user-app__radio visually-hidden" type="radio" name="app-group" value="IOS" id="iOS" checked>
+                    <label class="user-app__radio-sign" for="IOS">Pink для iOS</label>
+                  </li>
 
+                  <li class="user-app__item">
+                    <input class="user-app__radio visually-hidden" type="radio" name="app-group" value="Android" id="Android">
+                    <label class="user-app__radio-sign" for="Android">Pink на Android</label>
+                  </li>
+
+                  <li class="user-app__item">
+                    <input class="user-app__radio visually-hidden" type="radio" name="app-group" value="Windows" id="Windows">
+                    <label class="user-app__radio-sign" for="Windows">Windows Phone</label>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </fieldset>
+          <div class="user-form__wrapper feedback-form__container">
+            <p class="feedback-form__comment-block">
+              <label class="feedback-form__comment-sign" for="user-comment">Опишите свои эмоции</label>
+              <textarea class="feedback-form__comment" name="user-comment" id="user-comment" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </p>
+            <div class="user-form__button-container">
+              <button class="feedback-form__button button button--feedback" type="submit">Отправить форму</button>
+
+              <p class="user-form__comment user-form__wrapper"><span class="user-form__mark">*</span> — обязательные<span class="user-form__mark-large">для заполнения</span> поля</p>
+            </div>
+          </div>
+        </div>
       </form>
 
-      <p class="user-form__comment"><span class="user-form__mark">*</span> - обязательные поля</p>
     </section>
 
   </main>
 
-  <footer class="page-footer">
-    <img class="page-footer__footer-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="логтоип PINK">
-    <div class="page-footer__social-wrapper">
-      <ul class="page-footer__social-list social-list">
-        <li class="page-footer__item social-item">
-          <a class="page-footer__link social-button" href="#">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-        <li class="page-footer__item social-item">
-          <a class="page-footer__link social-button" href="#">
-            <span class="visually-hidden">Фэйсбук</span>
-          </a>
-        </li>
-        <li class="page-footer__item social-item">
-          <a class="page-footer__link social-button" href="#">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано<a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy"></a></p>
+  <footer class="page-footer page-footer__form">
+    <div class="page-footer__wrapper">
+      <picture class="page-footer__picture">
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="page-footer__footer-logo page-footer__footer-logo--form" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="логтоип PINK">
+      </picture>
+      <div class="page-footer__social-wrapper">
+        <ul class="page-footer__social-list social-list social-list__form">
+          <li class="page-footer__item social-list__social-item">
+            <a class="page-footer__link social-list__social-button" href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g>
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__item social-list__social-item">
+            <a class="page-footer__link social-list__social-button" href="#">
+              <span class="visually-hidden">Фэйсбук</span>
+              <svg class="social-list__icon social-list__icon--facebook" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__item social-list__social-item">
+            <a class="page-footer__link social-list__social-button" href="#">
+              <span class="visually-hidden">Ютуб</span>
+              <svg class="social-list__icon social-list__icon--youtube" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy"></a>
+        </p>
+      </div>
     </div>
   </footer>
 </body>

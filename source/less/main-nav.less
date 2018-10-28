@@ -1,3 +1,150 @@
 .main-nav {
+  margin: 0 auto;
+  width: 100%;
   background-color: @blue;
+}
+
+.main-nav__container {
+  position: relative;
+  .mobile-container();
+}
+
+.main-nav__wrapper {
+  position: relative;
+  top: 4px;
+  width: 100%;
+  background-color: @blue;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  width: 70px;
+  height: 50px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav__toggle:focus {
+  outline: 1px solid @pink;
+}
+
+.main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 21px;
+  left: 20px;
+
+  width: 52px;
+  height: 4px;
+
+  background-color: @white;
+  box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
+}
+
+.main-nav__toggle:focus::before,
+.main-nav__toggle:focus::after {
+  content: "";
+
+  position: absolute;
+  top: 29px;
+  left: 44px;
+
+  width: 30px;
+  height: 4px;
+  background-color: @white;
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.main-nav__toggle:focus::after {
+  transform: rotate(-45deg);
+}
+
+.main-nav__toggle:focus + .main-nav__wrapper {
+  display: block;
+  position: relative;
+}
+
+.main-nav__image-wrap {
+  .mobile-container();
+  position: relative;
+}
+
+.main-nav__image {
+  position: absolute;
+  top: 112px;
+  left: -19px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__container {
+    .tablet-container();
+  }
+
+  .main-nav__image-wrap {
+    .tablet-container();
+    position: relative;
+  }
+
+  .main-nav__image {
+    top: 140px;
+    width: 700px;
+  }
+
+  .main-nav__toggle {
+    top: 17px;
+  }
+
+  .page-header__navigation {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .main-nav__container {
+    .desktop-container();
+    position: relative;
+  }
+
+  .main-nav__image-wrap {
+    .desktop-container();
+  }
+
+  .main-nav__image {
+    top: 94px;
+    left: 54px;
+    width: 1050px;
+  }
+
+  .page-header__navigation {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    top: -75px;
+    padding-top: 23px;
+    padding-bottom: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }

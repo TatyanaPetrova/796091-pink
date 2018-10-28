@@ -1,0 +1,31 @@
+.controls__item {
+  position: relative;
+  top: -4px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 17px;
+  text-align: center;
+
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-container__radio-button ~ .controls__item::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  width: 7px;
+  height: 7px;
+  margin-right: 8px;
+  background-color: @white;
+  border: 3px solid @blue;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.controls {
+  margin-left: 15px;
+  text-align: center;
+}
