@@ -38,16 +38,6 @@
   opacity: 0.3;
 }
 
-.site-list__item--active::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  top: 50px;
-  left: 0;
-  background-color: @white;
-}
-
 @media (min-width: @desktop-width) {
   .site-list {
     .desktop-container();
@@ -67,5 +57,15 @@
   .site-list__link {
     text-transform: none;
     font-weight: 400;
+  }
+
+  .site-list__item--active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50px;
+    left: 0;
+    background-color: @white;
   }
 }
