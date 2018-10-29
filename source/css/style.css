@@ -396,6 +396,13 @@ input[type="radio"] {
   border-radius: 50px;
   color: #d22856;
 }
+.button--post:hover {
+  background-color: #d22856;
+  color: #ffffff;
+}
+.button--post:focus {
+  color: #e07e94;
+}
 .button--cancel {
   padding-left: 3px;
   padding-top: 14px;
@@ -407,6 +414,15 @@ input[type="radio"] {
   border: 3px solid #dddfe0;
   border-radius: 50px;
   color: #dddfe0;
+}
+.button--cancel:hover {
+  border: 3px solid #b5b9be;
+  color: #b5b9be;
+}
+.button--cancel:focus {
+  border: 3px solid #b5b9be;
+  background-color: #b5b9be;
+  color: #f2f2f2;
 }
 .button-heart {
   width: 5px;
@@ -479,6 +495,8 @@ input[type="radio"] {
 .page-header__photo {
   margin: 0;
   margin-bottom: 45px;
+  padding-bottom: 28px;
+  background-size: auto 100%;
 }
 .page-header__form {
   min-height: 236px;
@@ -535,6 +553,7 @@ input[type="radio"] {
   }
   .page-header__photo {
     margin-bottom: 92px;
+    min-height: 689px;
   }
   .page-header__form {
     min-height: 690px;
@@ -1752,6 +1771,14 @@ input[type="radio"] {
   font-weight: 300;
   color: #d22856;
 }
+.contacts__way--mail:hover {
+  color: #283645;
+  border-bottom: 1px solid #283645;
+}
+.contacts__way--mail:active {
+  color: #cdcfd1;
+  border: none;
+}
 .contacts__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1949,7 +1976,7 @@ input[type="radio"] {
   color: #283645;
 }
 .photos-list__item {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   background-color: #f2f2f2;
 }
 .photos-list__item--first {
@@ -1958,12 +1985,12 @@ input[type="radio"] {
 .photos-list__sign {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
-  padding-left: 20px;
+  padding-top: 11px;
+  padding-left: 18px;
   text-align: left;
 }
 .photos-list__sign--main {
-  padding-top: 19px;
+  padding-top: 18px;
 }
 .photos-list__post {
   margin: 0;
@@ -1972,7 +1999,7 @@ input[type="radio"] {
 .photos-list__image {
   width: 100%;
 }
-.photos-list__image-main {
+.photos-list__image--main {
   margin-bottom: -7px;
 }
 .photos-list__icon-wrapper {
@@ -1983,7 +2010,7 @@ input[type="radio"] {
 }
 .photos-list__icon-text {
   position: absolute;
-  top: -137px;
+  top: -138px;
   right: 0;
   display: inline-block;
   margin: 0;
@@ -2035,14 +2062,14 @@ input[type="radio"] {
     padding: 0;
   }
   .photos-list__sign {
-    padding-top: 17px;
+    padding-top: 16px;
     padding-left: 29px;
     padding-bottom: 59px;
   }
   .photos-list__sign--main {
-    padding-top: 24px;
+    padding-top: 31px;
     padding-bottom: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     margin-top: -7px;
   }
   .photos-list__image--main {
@@ -2054,7 +2081,7 @@ input[type="radio"] {
     padding: 0;
   }
   .photos-list__icon-text {
-    top: -460px;
+    top: -453px;
   }
   .photos-list__like-wrapper {
     position: relative;
@@ -2083,7 +2110,7 @@ input[type="radio"] {
     position: relative;
   }
   .photos-list__icon-text {
-    top: -462px;
+    top: -453px;
   }
   .photos-list__image--main {
     height: 506px;
@@ -2119,8 +2146,8 @@ input[type="radio"] {
 .like-container__button::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 16px;
+  left: 19px;
   width: 13px;
   height: 12px;
   background-image: url("../img/icon-heart.svg");
@@ -2132,6 +2159,7 @@ input[type="radio"] {
   }
   .like-container__text--main {
     margin-left: 50px;
+    margin-top: -2px;
   }
   .like-container {
     position: absolute;
@@ -2139,15 +2167,17 @@ input[type="radio"] {
   }
   .like-container__button::before {
     left: 228px;
+    top: 15px;
   }
   .like-container__button--main::before {
     left: 158px;
+    top: 13px;
   }
 }
 @media (min-width: 1200px) {
   .like-container__text--main {
     margin-left: 670px;
-    margin-top: 24px;
+    margin-top: 22px;
   }
   .like-container__button--main::before {
     left: 776px;
@@ -2161,7 +2191,7 @@ input[type="radio"] {
   width: 280px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 43px;
+  margin-bottom: 44px;
 }
 .photo-editor__intro {
   margin: 0;
@@ -2203,6 +2233,13 @@ input[type="radio"] {
 }
 .editor__icon {
   margin-right: 30px;
+  fill: #b5b9be;
+}
+.editor__icon:hover {
+  fill: #8d949b;
+}
+.editor__icon--crop {
+  fill: #d22856;
 }
 .editor__icon--contrast {
   padding-top: 8px;
@@ -2481,7 +2518,6 @@ input[type="radio"] {
   }
   .page-footer__footer-logo {
     margin: 0;
-    margin-top: -5px;
   }
   .page-footer__footer-logo--index {
     margin: 0;
@@ -2568,7 +2604,7 @@ input[type="radio"] {
 @media (min-width: 660px) {
   .social-list {
     margin-bottom: 0;
-    margin-left: 75px;
+    margin-left: 83px;
     margin-top: 10px;
   }
   .social-list--index {
