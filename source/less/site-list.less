@@ -34,8 +34,7 @@
 }
 
 .site-list__link:focus {
-  color: @white;
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 @media (min-width: @desktop-width) {
@@ -43,6 +42,11 @@
     .desktop-container();
     display: flex;
     margin-left: 557px;
+  }
+
+  .site-list__link:focus {
+    color: @white;
+    opacity: 0.3;
   }
 
   .site-list__item {

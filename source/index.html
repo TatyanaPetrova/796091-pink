@@ -154,8 +154,8 @@
         </div>
 
         <div class="profit__description">
-          <h2 class="profit__title">Эффект на 24 часа!</h2>
-          <p class="profit__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <h2 class="profit__title"><span class="profit__title-part">Эффект</span> на 24 часа!</h2>
+          <p class="profit__text">Британские ученые провели исследования и доказали, что положительный эффект<span class="profit__text-part"> от использования приложения длится</span> целые сутки!</p>
           <a class="profit__link" href="/">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -183,16 +183,19 @@
         <div class="review__toggle toggle-container">
 
           <input class="toggle-container__radio-button radio-button-1" type="radio" id="button-1" name="page" aria-label="Первая страница" checked>
+          <label class="controls__item controls__item--1" for="button-1"><span class="visually-hidden">Первый</span></label>
 
           <input class="toggle-container__radio-button radio-button" type="radio" id="button-2" name="page" aria-label="Вторая страница">
+          <label class="controls__item controls__item--2" for="button-2"><span class="visually-hidden">Второй</span></label>
 
           <input class="toggle-container__radio-button radio-button" type="radio" id="button-3" name="page" aria-label="Третья страница">
-
+          <label class="controls__item controls__item--3" for="button-3"><span class="visually-hidden">Третий</span></label>
+          <!---
           <div class="toggle-container__controls controls">
             <label class="controls__item controls__item--1" for="button-1"><span class="visually-hidden">Первый</span></label>
             <label class="controls__item controls__item--2" for="button-2"><span class="visually-hidden">Второй</span></label>
             <label class="controls__item controls__item--3" for="button-3"><span class="visually-hidden">Третий</span></label>
-          </div>
+          </div> --->
         </div>
       </div>
     </section>
@@ -204,7 +207,7 @@
           <th class="price-table__item price-table__item--title price-table__item--empty"><span class="visually-hidden">Контент</span>
           </th>
           <th class="price-table__item price-table__item--title price-table__item--column">База<span class="price-table__item--price">1,99 USD</span></th>
-          <th class="price-table__item price-table__item--title">Стандарт<span class="price-table__item--price">3,99 USD</span>
+          <th class="price-table__item price-table__item--title price-table__item--title--hit">Стандарт<span class="price-table__item--price">3,99 USD</span>
           </th>
           <th class="price-table__item price-table__item--title price-table__item--column">Анлим<span class="price-table__item--price">9,99 USD</span></th>
         </tr>
@@ -307,17 +310,21 @@
       </table>
       <div class="price__toggle toggle-container">
 
-        <input class="toggle-container__radio-button radio-button" type="radio" id="button-1" name="page" aria-label="Первая страница" checked>
+        <input class="price-toggle-container__radio-button radio-button" type="radio" id="price-button-1" name="price-page" aria-label="Первая страница">
+        <label class="price-controls__item controls__item-1" for="price-button-1"><span class="visually-hidden">Первый</span></label>
 
-        <input class="toggle-container__radio-button radio-button" type="radio" id="button-2" name="page" aria-label="Вторая страница">
+        <input class="price-toggle-container__radio-button radio-button" type="radio" id="price-button-2" name="price-page" aria-label="Вторая страница" checked>
+        <label class="price-controls__item controls__item-2" for="price-button-2"><span class="visually-hidden">Второй</span></label>
 
-        <input class="toggle-container__radio-button radio-button" type="radio" id="button-3" name="page" aria-label="Третья страница">
 
+        <input class="price-toggle-container__radio-button radio-button" type="radio" id="price-button-3" name="price-page" aria-label="Третья страница">
+        <label class="price-controls__item controls__item-3" for="price-button-3"><span class="visually-hidden">Третий</span></label>
+        <!--
         <div class="toggle-container__controls controls">
           <label class="controls__item controls__item-1" for="button-1"><span class="visually-hidden">Первый</span></label>
           <label class="controls__item controls__item-2" for="button-2"><span class="visually-hidden">Второй</span></label>
           <label class="controls__item controls__item-3" for="button-3"><span class="visually-hidden">Третий</span></label>
-        </div>
+        </div> -->
       </div>
     </section>
 
