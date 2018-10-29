@@ -366,6 +366,15 @@ input[type="radio"] {
   background-color: #2aab6d;
   cursor: pointer;
 }
+.button--feedback:hover {
+  background-color: #1c9b5e;
+}
+.button--feedback:focus {
+  color: #7abc98;
+}
+.button--feedback:disabled {
+  background-color: #e5e5e5;
+}
 .button--download {
   padding-left: 3px;
   line-height: 20px;
@@ -503,6 +512,7 @@ input[type="radio"] {
   margin: 0;
   margin-bottom: 45px;
   padding-bottom: 51px;
+  background-size: auto 100%;
 }
 .page-header__container {
   width: 280px;
@@ -602,7 +612,7 @@ input[type="radio"] {
   }
   .page-header__form {
     min-height: 394px;
-    margin-bottom: 90px;
+    margin-bottom: 93px;
   }
   .page-header__container {
     width: 940px;
@@ -709,9 +719,10 @@ input[type="radio"] {
     margin: 0 auto;
     padding: 0;
     position: relative;
+    width: 700px;
   }
   .main-nav__image {
-    top: 140px;
+    top: 78px;
     width: 700px;
   }
   .main-nav__toggle {
@@ -736,10 +747,11 @@ input[type="radio"] {
     width: 940px;
     margin: 0 auto;
     padding: 0;
+    width: 1050px;
   }
   .main-nav__image {
-    top: 93px;
-    left: 54px;
+    top: 25px;
+    left: 70px;
     width: 1050px;
   }
   .page-header__navigation {
@@ -2487,6 +2499,9 @@ input[type="radio"] {
   margin-bottom: 40px;
   margin-top: 42px;
 }
+.page-footer__footer-logo--form {
+  margin-top: 40px;
+}
 .page-footer__social-wrapper {
   margin: auto;
 }
@@ -2862,9 +2877,9 @@ input[type="radio"] {
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
             order: -2;
-    width: 432px;
+    width: 434px;
     margin: 0;
-    margin-top: -2px;
+    margin-top: -5px;
     margin-bottom: 4px;
   }
   .user-form__intro {
@@ -2939,6 +2954,14 @@ input[type="radio"] {
   padding-bottom: 20px;
   border: 2px solid #f2f2f2;
 }
+.feedback-form__user-data:hover {
+  border-color: #283645;
+  outline: none;
+}
+.feedback-form__user-data:active {
+  border-color: #d22856;
+  outline: none;
+}
 .feedback-form__user-data::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 30px;
@@ -2982,7 +3005,7 @@ input[type="radio"] {
   padding-top: 16px;
   padding-left: 20px;
   padding-bottom: 87px;
-  border-top: 2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
 }
 .feedback-form__comment::-webkit-input-placeholder {
   font-size: 18px;
@@ -3006,7 +3029,7 @@ input[type="radio"] {
   display: none;
 }
 .feedback-form__button {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 @media (min-width: 660px) {
   .feedback-form__container {
@@ -3222,6 +3245,7 @@ input[type="radio"] {
     width: 384px;
   }
   .feedback-form__sign {
+    margin-bottom: 0;
     -ms-flex-item-align: center;
         align-self: center;
   }
@@ -3235,7 +3259,7 @@ input[type="radio"] {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 338px;
-    padding-left: 22px;
+    padding-left: 20px;
     padding-top: 23px;
     padding-bottom: 20px;
     border: 2px solid #f2f2f2;
@@ -3262,11 +3286,22 @@ input[type="radio"] {
     width: 379px;
   }
   .feedback-form__user-data--contact {
-    position: relative;
-    padding-bottom: 22px;
+    padding-bottom: 20px;
     padding-left: 17px;
     margin-bottom: 10px;
     width: 373px;
+  }
+  .feedback-form__user-data-wrapper {
+    position: relative;
+  }
+  .feedback-form__user-data-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 13px;
+    width: 63px;
+    height: 59px;
+    background-color: #f2f2f2;
   }
   .feedback-form__comment-sign {
     margin-bottom: 28px;
@@ -3367,6 +3402,12 @@ input[type="radio"] {
   background-color: #ffffff;
   border: 3px solid #e5e5e5;
   border-radius: 4px;
+}
+.user-record__checkbox-sign:hover::before {
+  border: 3px solid #283645;
+}
+.user-record__checkbox-sign:active::before {
+  border: 3px solid #d22856;
 }
 .user-record__checkbox:checked + .user-record__checkbox-sign::after {
   content: "";
@@ -3526,7 +3567,7 @@ input[type="radio"] {
     content: "";
     position: absolute;
     left: -60px;
-    top: -10px;
+    top: -8px;
     width: 35px;
     height: 35px;
     border: 3px solid #f2f2f2;
@@ -3592,6 +3633,12 @@ input[type="radio"] {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+}
+.user-app__radio-sign:hover::before {
+  border: 2px solid #283645;
+}
+.user-app__radio-sign:active::before {
+  border: 2px solid #d22856;
 }
 .user-app__radio:checked + .user-app__radio-sign::after {
   content: "";

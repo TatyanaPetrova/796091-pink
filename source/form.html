@@ -120,12 +120,16 @@
             <div class="feedback-form__item-wrapper">
               <p class="feedback-form__item feedback-form__item--contact">
                 <label class="feedback-form__sign feedback-form__sign--contact" for="user-phone">Номер телефона</label>
-                <input class="feedback-form__user-data feedback-form__user-data--contact" type="tel" pattern="7[0-9]{10}" id="user-phone" name="phone" placeholder="Номер, пожалуйста">
+                <span class="feedback-form__user-data-wrapper feedback-form__user-data-wrapper--phone">
+                  <input class="feedback-form__user-data feedback-form__user-data--contact" type="tel" pattern="7[0-9]{10}" id="user-phone" name="phone" placeholder="Номер, пожалуйста">
+                </span>
               </p>
 
               <p class="feedback-form__item feedback-form__item--contact">
                 <label class="feedback-form__sign feedback-form__sign--contact" for="user-mail">Адрес почты</label>
-                <input class="feedback-form__user-data feedback-form__user-data--contact" type="email" id="user-mail" name="mail" required placeholder="Введите почту *">
+                <span class="feedback-form__user-data-wrapper feedback-form__user-data-wrapper--mail">
+                  <input class="feedback-form__user-data feedback-form__user-data--contact" type="email" id="user-mail" name="mail" required placeholder="Введите почту *">
+                </span>
               </p>
             </div>
           </div>
@@ -137,7 +141,7 @@
                 <ul class="user-app__list">
 
                   <li class="user-app__item">
-                    <input class="user-app__radio visually-hidden" type="radio" name="app-group" value="IOS" id="iOS" checked>
+                    <input class="user-app__radio visually-hidden" type="radio" name="app-group" value="IOS" id="IOS" checked>
                     <label class="user-app__radio-sign" for="IOS">Pink для iOS</label>
                   </li>
 
