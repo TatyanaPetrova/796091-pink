@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body class="main-body">
@@ -30,21 +34,23 @@
       </div>
 
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-            Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="/">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__list-wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="/">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="page-header__wrapper">
@@ -64,9 +70,9 @@
           <figure class="photos-list__post">
             <a class="photos-list__photo-link" href="/">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-                <img class="photos-list__image photos-list__image--main" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+                <img class="photos-list__image photos-list__image--main" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" width="320" height="137" alt="Панорама дня">
               </picture>
               <div class="photos-list__icon-wrapper">
                 <p class="photos-list__icon-text">Панорама дня</p>
@@ -82,7 +88,7 @@
             </figcaption>
           </figure>
           <div class="photos-list__like-wrapper">
-            <div class="photos-list__like photos-list__like--main like-container photos-list__wrap">
+            <div class="photos-list__like photos-list__like--main like-container like-container--main photos-list__wrap">
               <button class="like-container__button  like-container__button--main button-heart" type="button" aria-label="like"></button>
               <p class="like-container__text like-container__text--main">Нравится: 215</p>
             </div>
@@ -95,9 +101,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                  <img class="photos-list__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
+                  <img class="photos-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
               <figcaption>
@@ -117,9 +123,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
               <figcaption>
@@ -139,9 +145,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -162,9 +168,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -185,9 +191,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -208,9 +214,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -241,9 +247,9 @@
         <div class="photo-editor__container editor">
           <div class="editor__image-wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-              <img class="editor__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="фотография">
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg">
+              <img class="editor__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" width="280" height="374" alt="фотография">
             </picture>
           </div>
 
@@ -316,7 +322,7 @@
         <img class="page-footer__footer-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="логтоип PINK">
       </picture>
       <div class="page-footer__social-wrapper">
-        <ul class="page-footer__social-list social-list">
+        <ul class="page-footer__social-list social-list social-list--photo">
           <li class="page-footer__item social-list__social-item">
             <a class="page-footer__link social-list__social-button" href="#">
               <span class="visually-hidden">Твиттер</span>
@@ -348,7 +354,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy"></a>
+        <p class="copyright__text copyright__text--photo">Разработано<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy"></a>
         </p>
       </div>
     </div>
