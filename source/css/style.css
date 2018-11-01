@@ -854,6 +854,7 @@ input[type="radio"] {
   }
   .site-list__item {
     margin-left: 82px;
+    padding-top: 17px;
     border: none;
   }
   .site-list__item:first-child {
@@ -957,7 +958,7 @@ input[type="radio"] {
   }
   .promo__intro {
     margin-top: 92px;
-    margin-left: 100px;
+    margin-left: 97px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -1095,7 +1096,7 @@ input[type="radio"] {
     display: inline-block;
   }
   .profit__text {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     width: 530px;
     font-size: 18px;
     line-height: 30px;
@@ -1344,7 +1345,7 @@ input[type="radio"] {
             flex-direction: row;
     width: auto;
     padding-top: 52px;
-    margin-left: 32px;
+    margin-left: 28px;
   }
   .features__item {
     margin-right: 80px;
@@ -1746,7 +1747,18 @@ input[type="radio"] {
     line-height: 30px;
     text-transform: uppercase;
   }
+  .price-table__item--title--hit::before {
+    top: 12px;
+    left: 10px;
+  }
+  .price-table__item--title--hit::after {
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
   .price-table__item--price {
+    margin-top: 1px;
+    margin-left: -3px;
     font-size: 24px;
     line-height: 30px;
   }
