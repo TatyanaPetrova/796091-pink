@@ -1862,7 +1862,7 @@ input[type="radio"] {
     line-height: 50px;
   }
   .contacts__intro--connection {
-    width: 352px;
+    width: 365px;
   }
   .contacts__wrapper {
     position: relative;
@@ -3863,7 +3863,8 @@ input[type="radio"] {
     margin-bottom: 51px;
   }
   .editor__editor-filter::before {
-    width: 100px;
+    left: -54px;
+    width: 275px;
   }
   .editor__editor-filter--large {
     display: block;
@@ -3913,10 +3914,10 @@ input[type="radio"] {
   .editor__icon {
     width: 50px;
     height: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
   .editor__icon--fill {
-    margin-bottom: 28px;
+    margin-bottom: 22px;
   }
   .editor__icon--contrast {
     height: 30px;
@@ -3925,6 +3926,7 @@ input[type="radio"] {
   .editor__editor-filter {
     margin-top: 76px;
     margin-bottom: -6px;
+    margin-left: 0;
   }
   .editor__editor-filter::before {
     left: -23px;
