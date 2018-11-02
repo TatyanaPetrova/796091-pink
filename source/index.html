@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body class="main-body">
@@ -28,28 +32,30 @@
         </div>
       </div>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="/">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__list-wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="/">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <div class="main-nav__image-wrap">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png">
-        <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
-        <img src="img/iphone-hand-mobile@1x.png" class="main-nav__image" width="258" height="286" alt="так работает приложение">
+        <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png">
+        <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png">
+        <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" class="main-nav__image" width="258" height="286" alt="так работает приложение">
       </picture>
     </div>
 
@@ -108,9 +114,9 @@
       <div class="features__wrapper">
         <div class="features__container">
           <div class="features__images features-images__wrapper">
-            <img class="features__images" width="292" height="302" src="img/iphone-screen-1-desktop@1x.png">
-            <img class="features__images" width="292" height="302" src="img/iphone-screen-2-desktop@1x.png">
-            <img class="features__images" width="292" height="302" src="img/iphone-screen-3-desktop@1x.png">
+            <img class="features__images" width="292" height="302" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png">
+            <img class="features__images" width="292" height="302" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png">
+            <img class="features__images" width="292" height="302" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png">
           </div>
           <ul class="features__list">
             <li class="features__item">
@@ -134,9 +140,9 @@
 
           <div class="features__image-wrap">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png">
-              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
-              <img class="features__image" width="157" height="320" src="img/iphone-screen-mobile@1x.png">
+              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png, img/iphone-screen-3-desktop@2x.png">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png">
+              <img class="features__image" width="157" height="320" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png">
             </picture>
           </div>
         </div>
@@ -154,8 +160,8 @@
         </div>
 
         <div class="profit__description">
-          <h2 class="profit__title">Эффект на 24 часа!</h2>
-          <p class="profit__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <h2 class="profit__title"><span class="profit__title-part">Эффект</span> на 24 часа!</h2>
+          <p class="profit__text">Британские ученые провели исследования и доказали, что положительный эффект<span class="profit__text-part"> от использования приложения длится</span> целые сутки!</p>
           <a class="profit__link" href="/">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -183,16 +189,19 @@
         <div class="review__toggle toggle-container">
 
           <input class="toggle-container__radio-button radio-button-1" type="radio" id="button-1" name="page" aria-label="Первая страница" checked>
+          <label class="controls__item controls__item--1" for="button-1"><span class="visually-hidden">Первый</span></label>
 
           <input class="toggle-container__radio-button radio-button" type="radio" id="button-2" name="page" aria-label="Вторая страница">
+          <label class="controls__item controls__item--2" for="button-2"><span class="visually-hidden">Второй</span></label>
 
           <input class="toggle-container__radio-button radio-button" type="radio" id="button-3" name="page" aria-label="Третья страница">
-
+          <label class="controls__item controls__item--3" for="button-3"><span class="visually-hidden">Третий</span></label>
+          <!---
           <div class="toggle-container__controls controls">
             <label class="controls__item controls__item--1" for="button-1"><span class="visually-hidden">Первый</span></label>
             <label class="controls__item controls__item--2" for="button-2"><span class="visually-hidden">Второй</span></label>
             <label class="controls__item controls__item--3" for="button-3"><span class="visually-hidden">Третий</span></label>
-          </div>
+          </div> --->
         </div>
       </div>
     </section>
@@ -204,7 +213,7 @@
           <th class="price-table__item price-table__item--title price-table__item--empty"><span class="visually-hidden">Контент</span>
           </th>
           <th class="price-table__item price-table__item--title price-table__item--column">База<span class="price-table__item--price">1,99 USD</span></th>
-          <th class="price-table__item price-table__item--title">Стандарт<span class="price-table__item--price">3,99 USD</span>
+          <th class="price-table__item price-table__item--title price-table__item--title--hit">Стандарт<span class="price-table__item--price">3,99 USD</span>
           </th>
           <th class="price-table__item price-table__item--title price-table__item--column">Анлим<span class="price-table__item--price">9,99 USD</span></th>
         </tr>
@@ -305,19 +314,23 @@
 
         </tr>
       </table>
-      <div class="price__toggle toggle-container">
+      <div class="price__toggle toggle-container price-controls">
 
-        <input class="toggle-container__radio-button radio-button" type="radio" id="button-1" name="page" aria-label="Первая страница" checked>
+        <input class="toggle-container__radio-button--price radio-button" type="radio" id="price-button-1" name="price-page" aria-label="Первая страница">
+        <label class="price-controls__item controls__item-1" for="price-button-1"><span class="visually-hidden">Первый</span></label>
 
-        <input class="toggle-container__radio-button radio-button" type="radio" id="button-2" name="page" aria-label="Вторая страница">
+        <input class="toggle-container__radio-button--price radio-button" type="radio" id="price-button-2" name="price-page" aria-label="Вторая страница" checked>
+        <label class="price-controls__item controls__item-2" for="price-button-2"><span class="visually-hidden">Второй</span></label>
 
-        <input class="toggle-container__radio-button radio-button" type="radio" id="button-3" name="page" aria-label="Третья страница">
 
+        <input class="toggle-container__radio-button--price radio-button" type="radio" id="price-button-3" name="price-page" aria-label="Третья страница">
+        <label class="price-controls__item controls__item-3" for="price-button-3"><span class="visually-hidden">Третий</span></label>
+        <!--
         <div class="toggle-container__controls controls">
           <label class="controls__item controls__item-1" for="button-1"><span class="visually-hidden">Первый</span></label>
           <label class="controls__item controls__item-2" for="button-2"><span class="visually-hidden">Второй</span></label>
           <label class="controls__item controls__item-3" for="button-3"><span class="visually-hidden">Третий</span></label>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -329,7 +342,7 @@
         <div class="contacts__wrapper">
           <p class="contacts__item contacts__item--call">Звоните: <span class="contacts__way">+7 (812) 555-66-66</span>
           </p>
-          <p class="contacts__item contacts__item--mail">Пишите: <span class="contacts__way">mail@htmlacademy.ru</span>
+          <p class="contacts__item contacts__item--mail">Пишите: <span class="contacts__way contacts__way--mail">mail@htmlacademy.ru</span>
           </p>
           <p class="contacts__item contacts__item--adress">Приезжайте в гости: <span class="contacts__way">ул. Большая Конюшенная,19/8</span>
           </p>
@@ -337,9 +350,9 @@
       </div>
       <div class="contacts__map-wraper">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg" width="320" height="645" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </picture>
       </div>
     </section>
@@ -351,7 +364,7 @@
         <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
         <img class="page-footer__footer-logo page-footer__footer-logo--index" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="логтоип PINK">
       </picture>
-      <div class="page-footer__social-wrapper">
+      <div class="page-footer__social-wrapper page-footer__social-wrapper--index">
         <ul class="page-footer__social-list social-list social-list--index">
           <li class="page-footer__item social-item">
             <a class="page-footer__link social-list__social-button" href="#">
@@ -384,7 +397,12 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy"></a>
+        <p class="copyright__text">Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип htmlAcademy">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path fill="#da5076" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
+            </svg>
+          </a>
         </p>
       </div>
     </div>

@@ -63,6 +63,14 @@
   border-radius: 4px;
 }
 
+.user-record__checkbox-sign:hover::before {
+  border: 3px solid @blue;
+}
+
+.user-record__checkbox-sign:active::before {
+  border: 3px solid @pink;
+}
+
 .user-record__checkbox:checked + .user-record__checkbox-sign::after {
   content: "";
   position: absolute;
@@ -220,7 +228,7 @@
     content: "";
     position: absolute;
     left: -60px;
-    top: -10px;
+    top: -8px;
     width: 35px;
     height: 35px;
     border: 3px solid @gray;

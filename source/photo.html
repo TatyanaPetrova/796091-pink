@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body class="main-body">
@@ -30,21 +34,23 @@
       </div>
 
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-            Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="/">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__list-wrapper">
+          <ul class="main-nav__list site-list site-list--photo">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="/">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="page-header__wrapper">
@@ -64,9 +70,9 @@
           <figure class="photos-list__post">
             <a class="photos-list__photo-link" href="/">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-                <img class="photos-list__image photos-list__image--main" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+                <img class="photos-list__image photos-list__image--main" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" width="320" height="137" alt="Панорама дня">
               </picture>
               <div class="photos-list__icon-wrapper">
                 <p class="photos-list__icon-text">Панорама дня</p>
@@ -82,7 +88,7 @@
             </figcaption>
           </figure>
           <div class="photos-list__like-wrapper">
-            <div class="photos-list__like photos-list__like--main like-container photos-list__wrap">
+            <div class="photos-list__like photos-list__like--main like-container like-container--main photos-list__wrap">
               <button class="like-container__button  like-container__button--main button-heart" type="button" aria-label="like"></button>
               <p class="like-container__text like-container__text--main">Нравится: 215</p>
             </div>
@@ -95,9 +101,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                  <img class="photos-list__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
+                  <img class="photos-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
               <figcaption>
@@ -117,9 +123,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
               <figcaption>
@@ -139,9 +145,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -162,9 +168,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -185,9 +191,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -208,9 +214,9 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -241,30 +247,31 @@
         <div class="photo-editor__container editor">
           <div class="editor__image-wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-              <img class="editor__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="фотография">
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg">
+              <img class="editor__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" width="280" height="374" alt="фотография">
             </picture>
           </div>
 
           <div class="editor__icon-wrapper">
+            <div class="editor__icon-container">
 
-            <svg class="editor__icon editor__icon--crop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-              <path fill="none" d="M0,0h48v48H0V0z" />
-              <path fill="#d22856" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
-            </svg>
+              <svg class="editor__icon editor__icon--crop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                <path fill="none" d="M0,0h48v48H0V0z" />
+                <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+              </svg>
 
-            <svg class="editor__icon editor__icon--fill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-              <path fill="none" d="M0,0h48v48H0V0z" />
-              <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
-              <rect y="40" width="48" height="3" />
-            </svg>
+              <svg class="editor__icon editor__icon--fill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                <path fill="none" d="M0,0h48v48H0V0z" />
+                <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+                <rect y="40" width="48" height="3" />
+              </svg>
 
-            <svg class="editor__icon editor__icon--contrast" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-              <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
-              <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
-            </svg>
-
+              <svg class="editor__icon editor__icon--contrast" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+                <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+              </svg>
+            </div>
           </div>
           <form class="editor__form" action="https://echo.htmlacademy.ru" method="post">
 
@@ -316,7 +323,7 @@
         <img class="page-footer__footer-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="логтоип PINK">
       </picture>
       <div class="page-footer__social-wrapper">
-        <ul class="page-footer__social-list social-list">
+        <ul class="page-footer__social-list social-list social-list--photo">
           <li class="page-footer__item social-list__social-item">
             <a class="page-footer__link social-list__social-button" href="#">
               <span class="visually-hidden">Твиттер</span>
@@ -348,7 +355,12 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy"></a>
+        <p class="copyright__text copyright__text--photo">Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип htmlAcademy">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path fill="#da5076" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z" />
+            </svg>
+          </a>
         </p>
       </div>
     </div>

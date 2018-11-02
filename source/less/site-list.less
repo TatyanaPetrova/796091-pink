@@ -34,19 +34,29 @@
 }
 
 .site-list__link:focus {
-  color: @white;
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 @media (min-width: @desktop-width) {
   .site-list {
     .desktop-container();
     display: flex;
-    margin-left: 557px;
+    margin-left: 235px;
+    width: 825px;
+  }
+
+  .site-list--photo {
+    width: 825px;
+  }
+
+  .site-list__link:focus {
+    color: @white;
+    opacity: 0.3;
   }
 
   .site-list__item {
     margin-left: 82px;
+    padding-top: 17px;
     border: none;
   }
 

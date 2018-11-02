@@ -1,0 +1,25 @@
+.toggle-container__radio-button:checked + .controls__item::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  background-color: @gray;
+  border: 3px solid @blue;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-container__radio-button--price:checked + .price-controls__item::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  background-color: @gray;
+  border: 3px solid @blue;
+  border-radius: 50%;
+  cursor: pointer;
+}

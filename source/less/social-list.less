@@ -17,8 +17,12 @@
   display: flex;
   width: 44px;
   height: 44px;
-  border: 3px solid @gray;
+  border: 3px solid #f0f1f2;
   border-radius: 50%;
+}
+
+.social-list__social-button:hover {
+  border: 3px solid @blue;
 }
 
 .social-list__icon {
@@ -41,7 +45,7 @@
 @media (min-width: @tablet-width) {
   .social-list {
     margin-bottom: 0;
-    margin-left: 75px;
+    margin-left: 83px;
     margin-top: 10px;
   }
 
@@ -58,6 +62,11 @@
   .social-list {
     display: flex;
     margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .social-list--photo {
+    margin-top: 22px;
   }
 
   .social-list__social-item {
@@ -74,7 +83,7 @@
   }
 
   .social-list--index {
-    margin-left: 65px;
+    margin-left: 0;
   }
 
   .social-list__icon {

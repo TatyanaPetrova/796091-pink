@@ -30,6 +30,16 @@
   border: 2px solid @gray;
 }
 
+.feedback-form__user-data:hover {
+  border-color: @blue;
+  outline: none;
+}
+
+.feedback-form__user-data:active {
+  border-color: @pink;
+  outline: none;
+}
+
 .feedback-form__user-data::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 30px;
@@ -78,7 +88,7 @@
   padding-top: 16px;
   padding-left: 20px;
   padding-bottom: 87px;
-  border-top: 2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
 }
 
 .feedback-form__comment::-webkit-input-placeholder {
@@ -107,7 +117,7 @@
 }
 
 .feedback-form__button {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: @tablet-width) {
@@ -313,6 +323,7 @@
   }
 
   .feedback-form__sign {
+    margin-bottom: 0;
     align-self: center;
   }
 
@@ -325,7 +336,7 @@
     display: inline-block;
     box-sizing: border-box;
     width: 338px;
-    padding-left: 22px;
+    padding-left: 20px;
     padding-top: 23px;
     padding-bottom: 20px;
     border: 2px solid @gray;
@@ -357,11 +368,24 @@
   }
 
   .feedback-form__user-data--contact {
-    position: relative;
-    padding-bottom: 22px;
+    padding-bottom: 20px;
     padding-left: 17px;
     margin-bottom: 10px;
     width: 373px;
+  }
+
+  .feedback-form__user-data-wrapper {
+    position: relative;
+  }
+
+  .feedback-form__user-data-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 13px;
+    width: 63px;
+    height: 59px;
+    background-color: @gray;
   }
 
   .feedback-form__comment-sign {

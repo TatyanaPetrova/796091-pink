@@ -30,7 +30,7 @@
 }
 
 .photos-list__item {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   background-color: @gray;
 }
 
@@ -41,13 +41,13 @@
 .photos-list__sign {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
-  padding-left: 20px;
+  padding-top: 11px;
+  padding-left: 18px;
   text-align: left;
 }
 
 .photos-list__sign--main {
-  padding-top: 19px;
+  padding-top: 18px;
 }
 
 .photos-list__post {
@@ -57,10 +57,12 @@
 
 .photos-list__image {
   width: 100%;
+  height: 180px;
 }
 
-.photos-list__image-main {
+.photos-list__image--main {
   margin-bottom: -7px;
+  height: 137px;
 }
 
 .photos-list__icon-wrapper {
@@ -70,7 +72,7 @@
 
 .photos-list__icon-text {
   position: absolute;
-  top: -137px;
+  top: -138px;
   right: 0;
   display: inline-block;
   margin: 0;
@@ -120,16 +122,20 @@
   }
 
   .photos-list__sign {
-    padding-top: 17px;
+    padding-top: 16px;
     padding-left: 29px;
     padding-bottom: 59px;
   }
 
   .photos-list__sign--main {
-    padding-top: 24px;
+    padding-top: 31px;
     padding-bottom: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     margin-top: -7px;
+  }
+
+  .photos-list__image {
+    height: 300px;
   }
 
   .photos-list__image--main {
@@ -141,7 +147,7 @@
   }
 
   .photos-list__icon-text {
-    top: -460px;
+    top: -453px;
   }
 
   .photos-list__like-wrapper {
@@ -172,7 +178,16 @@
   }
 
   .photos-list__icon-text {
-    top: -462px;
+    top: -453px;
+  }
+
+  .photos-list__sign--main {
+    padding-top: 30px;
+    margin-top: -7px;
+  }
+
+  .photos-list__image {
+    height: 400px;
   }
 
   .photos-list__image--main {
@@ -185,5 +200,9 @@
 
   .photos-list__item--first {
     margin-bottom: 19px;
+  }
+
+  .photos-list__like-wrapper {
+    .desktop-container();
   }
 }

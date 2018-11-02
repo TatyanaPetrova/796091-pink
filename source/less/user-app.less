@@ -51,6 +51,14 @@
   border-radius: 50%;
 }
 
+.user-app__radio-sign:hover::before {
+  border: 2px solid @blue;
+}
+
+.user-app__radio-sign:active::before {
+  border: 2px solid @pink;
+}
+
 .user-app__radio:checked + .user-app__radio-sign::after {
   content: "";
   position: absolute;
