@@ -2453,8 +2453,6 @@ input[type="radio"] {
   margin: auto;
   margin-bottom: 32px;
   margin-top: 42px;
-}
-.page-footer__footer-logo {
   fill: #283645;
 }
 .page-footer__footer-logo:hover {
@@ -3133,6 +3131,8 @@ input[type="radio"] {
   }
   .feedback-form__sign {
     margin: 0;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .feedback-form__user-data {
     padding-left: 21px;
@@ -3159,11 +3159,6 @@ input[type="radio"] {
     padding-left: 17px;
     padding-top: 24px;
     width: 500px;
-  }
-  .feedback-form__sign {
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-left: 0;
   }
   .feedback-form__sign--contact {
     -ms-flex-item-align: start;
