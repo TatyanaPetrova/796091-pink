@@ -12,10 +12,16 @@
 .contacts__intro {
   padding: 0;
   margin: auto;
+  padding-left: 4px;
+  width: 228px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   color: @blue;
+}
+
+.contacts__intro--connection {
+  width: 217px;
 }
 
 .contacts__item {
@@ -59,7 +65,7 @@
   margin-top: 32px;
 }
 
-.contacts__map-wraper::after {
+.contacts__map-wrapper::after {
   content: " ";
   position: absolute;
   top: 345px;
@@ -72,9 +78,30 @@
   background-size: cover;
 }
 
+.contacts__map-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 467px;
+  left: 142px;
+  width: 16px;
+  height: 16px;
+  background-color: @pink;
+  border: 10px solid @gray;
+  border-radius: 50%;
+}
+
 .contacts__map {
   width: 100%;
   height: 216px;
+}
+
+.contacts__map--google {
+  position: absolute;
+  top: 369px;
+  left: 0;
+  width: 100%;
+  height: 203px;
+  border: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -83,12 +110,14 @@
   }
 
   .contacts__intro {
+    padding-left: 12px;
+    width: 380px;
     font-size: 40px;
     line-height: 50px;
   }
 
   .contacts__intro--connection {
-    width: 365px;
+    width: 362px;
   }
 
   .contacts__wrapper {
@@ -118,14 +147,14 @@
     margin-left: 96px;
   }
 
-  .contacts__map-wraper {
+  .contacts__map-wrapper {
     position: relative;
   }
 
-  .contacts__map-wraper::after {
+  .contacts__map-wrapper::after {
     content: " ";
     position: absolute;
-    top: -4px;
+    top: -62px;
     left: 0;
     width: 100%;
     height: 130px;
@@ -135,8 +164,21 @@
     background-size: cover;
   }
 
+  .contacts__map-wrapper::before {
+    top: 193px;
+    left: 312px;
+  }
+
   .contacts__map {
     height: 373px;
+  }
+
+  .contacts__map--google {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: 378px;
   }
 }
 
@@ -171,6 +213,8 @@
 
   .contacts__intro {
     margin-left: 240px;
+    padding-left: 0;
+    width: 475px;
     font-size: 50px;
     line-height: 63px;
   }
@@ -184,8 +228,17 @@
     height: 502px;
   }
 
-  .contacts__map-wraper::after {
-    top: -25px;
-    height: 190px;
+  .contacts__map-wrapper::before {
+    top: 264px;
+    left: 581px;
+  }
+
+  .contacts__map-wrapper::after {
+    top: -28px;
+    height: 191px;
+  }
+
+  .contacts__map--google {
+    height: 505px;
   }
 }
