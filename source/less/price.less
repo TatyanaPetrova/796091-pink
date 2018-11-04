@@ -1,7 +1,7 @@
 .price {
   padding-top: 104px;
   padding-bottom: 39px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   background-color: @gray;
 }
 
@@ -109,7 +109,8 @@
 }
 
 .price-table__image-no {
-  margin-top: -2px;
+  margin-top: 0;
+  margin-left: 77px;
 }
 
 .price-table__image-middle {
@@ -118,7 +119,7 @@
 
 .price__toggle {
   .mobile-container();
-  padding-left: 131px;
+  width: 83px;
 }
 
 @media (min-width: @tablet-width) {
@@ -129,14 +130,21 @@
   .price-table__item {
     width: 156px;
     border-right: 1px solid @gray;
+    border-left: 1px solid @gray;
   }
 
   .price-table__line {
     display: flex;
     width: 620px;
   }
+  
+  .price-table__line--title {
+    background-color: transparent;
+  }
 
   .price-table__item--empty {
+    position: relative;
+    z-index: -5;
     background-color: @gray;
   }
 
@@ -155,12 +163,12 @@
 
   .price-table__image-middle {
     display: inline-block;
-    margin-left: 48px;
+    margin-left: 47px;
     margin-top: 2px;
   }
 
   .price {
-    padding-top: 88px;
+    padding-top: 90px;
     padding-bottom: 65px;
     margin-bottom: 45px;
   }
@@ -175,9 +183,10 @@
 
   .price-table__item--title {
     padding-top: 10px;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
     text-transform: uppercase;
     font-size: 16px;
+    background-color: @blue;
   }
 
   .price-table__item--title--hit::after {
@@ -192,7 +201,7 @@
   }
 
   .price-table__item--price {
-    margin-top: 0;
+    margin-top: -2px;
     font-size: 18px;
   }
 
@@ -203,7 +212,7 @@
   }
 
   .price-table__row {
-    margin-left: 14px;
+    margin-left: 16px;
   }
 
   .price__toggle {
@@ -213,7 +222,7 @@
 
 @media (min-width: @desktop-width) {
   .price {
-    padding-top: 175px;
+    padding-top: 173px;
     padding-bottom: 92px;
     margin-bottom: 63px;
   }
@@ -232,7 +241,7 @@
     padding-top: 16px;
     padding-left: 2px;
     padding-bottom: 23px;
-    width: 230px;
+    width: 231px;
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
@@ -250,8 +259,8 @@
   }
 
   .price-table__item--price {
-    margin-top: 1px;
-    margin-left: -3px;
+    margin-top: 2px;
+    margin-left: 4px;
     font-size: 24px;
     line-height: 30px;
   }
@@ -260,7 +269,7 @@
     margin: 0;
     padding-top: 14px;
     padding-bottom: 9px;
-    width: 232px;
+    width: 233px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -271,6 +280,6 @@
   }
 
   .price-table__image-middle {
-    margin-left: 79px;
+    margin-left: 82px;
   }
 }

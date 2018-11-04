@@ -37,11 +37,16 @@
 
 .review__title {
   margin: auto;
+  width: 159px;
   margin-bottom: 13px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   font-style: normal;
+}
+
+.review__controls {
+  display: none;
 }
 
 .review__text {
@@ -65,7 +70,7 @@
 
 @media (min-width: @tablet-width) {
   .review {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   .review__container {
@@ -92,6 +97,7 @@
   .review__title {
     order: 1;
     margin-bottom: 17px;
+    width: 176px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -111,7 +117,7 @@
 
 @media (min-width: @desktop-width) {
   .review::before {
-    top: 304px;
+    top: 312px;
   }
 
   .review__container {
@@ -121,51 +127,62 @@
   .review__quote {
     display: block;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
+    padding-left: 10px;
     fill: @gray;
   }
 
   .review__item {
+    position: relative;
     padding: 0;
   }
 
   .review__title {
+    width: 210px;
     margin-bottom: 0;
     font-size: 24px;
     line-height: 30px;
   }
 
+  .review__controls {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .review__controls--left {
+    top: 28px;
+    left: 0;
+  }
+
+  .review__controls--right {
+    top: 28px;
+    right: 0;
+  }
+
+  .review__icon {
+    fill: #bec2c7;
+  }
+
+  .review__icon:hover {
+    fill: @blue;
+  }
+
+  .review__icon:active {
+    fill: @gray;
+  }
+
   .review__text {
-    position: relative;
     margin: auto;
     margin-bottom: 36px;
     width: 690px;
     font-size: 18px;
   }
 
-  .review__text::after {
-    content: "";
-    position: absolute;
-    top: 27px;
-    left: -123px;
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/icon-review-arrow-left.svg");
-    background-repeat: no-repeat;
-  }
-
-  .review__text::before {
-    content: "";
-    position: absolute;
-    top: 27px;
-    left: 794px;
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/icon-review-arrow-right.svg");
-    background-repeat: no-repeat;
-  }
-
   .review__title-sign {
+    margin-top: 2px;
+    width: 223px;
+    margin-left: -6px;
     font-size: 18px;
   }
 
