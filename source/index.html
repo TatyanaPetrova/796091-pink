@@ -6,11 +6,14 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="fonts/opensans.woff2" as="font">
+  <link href="fonts/opensansbold.woff2" as="font">
+  <link href="fonts/opensanslight.woff2" as="font">
+  <link href="css/style.min.css" rel="stylesheet">
   <script>
     document.createElement( "picture" );
   </script>
-  <script src="js/picturefill.js" async=""></script>
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 
 <body class="main-body">
@@ -62,9 +65,14 @@
 
     <div class="main-nav__image-wrap">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png, img/iphone-hand-desktop@1x.webp, img/iphone-hand-desktop@2x.webp">
-        <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png, img/iphone-hand-tablet@1x.webp, img/iphone-hand-tablet@2x.webp">
-        <img src="img/iphone-hand-mobile@1x.png, img/iphone-hand-mobile@1x.webp" srcset="img/iphone-hand-mobile@2x.png, img/iphone-hand-mobile@2x.webp" class="main-nav__image" width="258" height="286" alt="так работает приложение">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp, img/iphone-hand-desktop@2x.webp">
+        <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp, img/iphone-hand-tablet@2x.webp">
+        <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp, img/iphone-hand-mobile@2x.webp">
+
+
+        <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png">
+        <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png">
+        <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" class="main-nav__image" width="258" height="286" alt="так работает приложение">
       </picture>
     </div>
 
@@ -114,11 +122,16 @@
       </div>
       <div class="features__wrapper">
         <div class="features__container">
-          <div class="features__images features-images__wrapper">
-            <img class="features__images" width="292" height="302" src="img/iphone-screen-1-desktop@1x.png, img/iphone-screen-1-desktop@1x.webp" srcset="img/iphone-screen-1-desktop@2x.png, img/iphone-screen-1-desktop@2x.webp">
-            <img class="features__images" width="292" height="302" src="img/iphone-screen-2-desktop@1x.png, img/iphone-screen-2-desktop@1x.webp" srcset="img/iphone-screen-2-desktop@2x.png, img/iphone-screen-2-desktop@2x.webp">
-            <img class="features__images" width="292" height="302" src="img/iphone-screen-3-desktop@1x.png, img/iphone-screen-3-desktop@1x.webp" srcset="img/iphone-screen-3-desktop@2x.png, img/iphone-screen-3-desktop@2x.webp">
-          </div>
+          <picture class="features__images features-images__wrapper">
+            <img class="features__images" width="292" height="302" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png">
+            <img class="features__images" width="292" height="302" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png">
+            <img class="features__images" width="292" height="302" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png">
+
+
+            <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp, img/iphone-screen-1-desktop@2x.webp">
+            <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp, img/iphone-screen-2-desktop@2x.webp">
+            <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp, img/iphone-screen-3-desktop@2x.webp">
+          </picture>
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__title">Поднимает настроение</h3>
@@ -142,9 +155,14 @@
 
           <div class="features__image-wrap">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png, img/iphone-screen-3-desktop@2x.png, img/iphone-screen-3-desktop@1x.webp, img/iphone-screen-3-desktop@2x.webp">
-              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png, img/iphone-screen-3-tablet@1x.webp, img/iphone-screen-3-tablet@2x.webp">
-              <img class="features__image" width="157" height="320" src="img/iphone-screen-mobile@1x.png, img/iphone-screen-mobile@1x.webp" srcset="img/iphone-screen-mobile@2x.png, img/iphone-screen-mobile@2x.webp">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp, img/iphone-screen-3-desktop@2x.webp">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp, img/iphone-screen-3-tablet@2x.webp">
+              <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp, img/iphone-screen-mobile@2x.webp">
+
+
+              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png, img/iphone-screen-3-desktop@2x.png">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png">
+              <img class="features__image" width="157" height="320" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png">
             </picture>
           </div>
         </div>
@@ -350,9 +368,14 @@
       </div>
       <div class="contacts__map-wrapper">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg, img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg, img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp">
-          <img class="contacts__map" src="img/bg-map-mobile@1x.png, img/bg-map-mobile@1x.webp" srcset="img/bg-map-mobile@2x.jpg, img/bg-map-mobile@2x.webp" width="320" height="645" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp">
+
+
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg" width="320" height="645" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
           <iframe class="contacts__map--google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1541267901882" width="320" height="645" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         </picture>
       </div>

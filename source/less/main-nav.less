@@ -33,10 +33,6 @@
   border: none;
 }
 
-.main-nav__toggle:focus {
-  outline: 1px solid @pink;
-}
-
 .main-nav__toggle::before {
   content: "";
 
@@ -49,6 +45,20 @@
 
   background-color: @white;
   box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
+}
+
+.main-nav__toggle:hover::before {
+  content: "";
+
+  position: absolute;
+  top: 21px;
+  left: 20px;
+
+  width: 52px;
+  height: 4px;
+
+  background-color: @pink;
+  box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
 }
 
 .main-nav__toggle:focus::before,
@@ -100,6 +110,7 @@
   .main-nav__image {
     top: 78px;
     width: 700px;
+    height: 545px;
   }
 
   .main-nav__toggle {
