@@ -6,11 +6,14 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link href="css/style.min.css" rel="stylesheet">
   <script>
     document.createElement( "picture" );
   </script>
-  <script src="js/picturefill.js" async=""></script>
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 
 <body class="main-body">
@@ -78,9 +81,13 @@
           <figure class="photos-list__post">
             <a class="photos-list__photo-link" href="/">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg, img/panorama-desktop@1x.webp, img/panorama-desktop@2x.webp">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg, img/panorama-tablet@1x.webp, img/panorama-tablet@2x.webp">
-                <img class="photos-list__image photos-list__image--main" src="img/panorama-mobile@1x.jpg, img/panorama-mobile@1x.webp" srcset="img/panorama-mobile@2x.jpg, img/panorama-mobile@2x.webp" width="320" height="137" alt="Панорама дня">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp, img/panorama-desktop@2x.webp">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp, img/panorama-tablet@2x.webp">
+                <source type="image/webp" srcset="img/panorama-mobile@1x.webp, img/panorama-mobile@2x.webp">
+
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+                <img class="photos-list__image photos-list__image--main" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" width="320" height="137" alt="Панорама дня">
               </picture>
               <div class="photos-list__icon-wrapper">
                 <p class="photos-list__icon-text">Панорама дня</p>
@@ -109,9 +116,14 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@1x.jpg, img/photo-car-desktop@1x.webp, img/photo-car-desktop@2x.webp">
-                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg, img/photo-car-tablet@1x.webp, img/photo-car-tablet@2x.webp">
-                  <img class="photos-list__image" src="img/photo-car-mobile@1x.jpg, img/photo-car-mobile@1x.webp" srcset="img/photo-car-mobile@2x.jpg, img/photo-car-mobile@2x.webp" width="280" height="180" alt="фотография">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp, img/photo-car-desktop@2x.webp">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp, img/photo-car-tablet@2x.webp">
+                  <source type="image/webp" srcset="img/photo-car-mobile@1x.webp, img/photo-car-mobile@2x.webp">
+
+
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
+                  <img class="photos-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
               <figcaption>
@@ -131,9 +143,15 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg, img/photo-drumset-desktop@1x.webp, img/photo-drumset-desktop@2x.webp">
-                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg, img/photo-drumset-tablet@1x.webp, img/photo-drumset-tablet@2x.webp">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-drumset-mobile@1x.jpg, img/photo-drumset-mobile@1x.webp" srcset="img/photo-drumset-mobile@2x.jpg, img/photo-drumset-mobile@2x.webp" width="280" height="180" alt="фотография">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp, img/photo-drumset-desktop@2x.webp">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp, img/photo-drumset-tablet@2x.webp">
+                  <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp, img/photo-drumset-mobile@2x.webp">
+
+
+
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
               <figcaption>
@@ -153,9 +171,15 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp, img/photo-window-desktop@2x.webp">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp, img/photo-window-tablet@2x.webp">
+                  <source type="image/webp" srcset="img/photo-window-mobile@1x.webp, img/photo-window-mobile@2x.webp">
+
+
+
                   <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg, img/photo-window-tablet@1x.webp, img/photo-window-tablet@2x.webp">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-window-mobile@1x.jpg, img/photo-window-mobile@1x.webp" srcset="img/photo-window-mobile@2x.jpg, img/photo-window-mobile@2x.webp" width="280" height="180" alt="фотография">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -176,9 +200,15 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg, img/photo-fair-desktop@1x.webp, img/photo-fair-desktop@2x.webp">
-                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg, img/photo-fair-tablet@1x.webp, img/photo-fair-tablet@2x.webp">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-fair-mobile@1x.jpg, img/photo-fair-mobile@1x.webp" srcset="img/photo-fair-mobile@2x.jpg, img/photo-fair-mobile@2x.webp" width="280" height="180" alt="фотография">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp, img/photo-fair-desktop@2x.webp">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp, img/photo-fair-tablet@2x.webp">
+                  <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp, img/photo-fair-mobile@2x.webp">
+
+
+
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -199,9 +229,15 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@1x.webp, img/photo-pov-desktop@2x.webp">
-                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg, img/photo-pov-tablet@1x.webp, img/photo-pov-tablet@2x.webp">
-                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-pov-mobile@1x.jpg, img/photo-pov-mobile@1x.webp" srcset="img/photo-pov-mobile@2x.jpg, img/photo-pov-mobile@2x.webp" width="280" height="180" alt="фотография">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp, img/photo-pov-desktop@2x.webp">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp, img/photo-pov-tablet@2x.webp">
+                  <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp, img/photo-pov-mobile@2x.webp">
+
+
+
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
+                  <img class="photos-list__image photos-list__image--mobile" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
 
@@ -222,8 +258,14 @@
             <figure class="photos-list__post">
               <a class="photos-list__photo-link" href="/">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg, img/photo-wing-desktop@1x.webp, img/photo-wing-desktop@2x.webp">
-                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg, img/photo-wing-tablet@1x.webp, img/photo-wing-tablet@2x.webp">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp, img/photo-wing-desktop@2x.webp">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp, img/photo-wing-tablet@2x.webp">
+                  <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp, img/photo-wing-mobile@2x.webp">
+
+
+
+                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
                   <img class="photos-list__image photos-list__image--mobile" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" width="280" height="180" alt="фотография">
                 </picture>
               </a>
@@ -255,9 +297,14 @@
         <div class="photo-editor__container editor">
           <div class="editor__image-wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg, img/photo-road-desktop@1x.webp, img/photo-road-desktop@2x.webp">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg, img/photo-road-tablet@1x.webp, img/photo-road-tablet@2x.webp">
-              <img class="editor__image" src="img/photo-road-mobile@1x.jpg, img/photo-road-mobile@1x.webp" srcset="img/photo-road-mobile@2x.jpg, img/photo-road-mobile@2x.webp" width="280" height="374" alt="фотография">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp, img/photo-road-desktop@2x.webp">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp, img/photo-road-tablet@2x.webp">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp, img/photo-road-mobile@2x.webp">
+
+
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg">
+              <img class="editor__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" width="280" height="374" alt="фотография">
             </picture>
           </div>
 
