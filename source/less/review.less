@@ -35,9 +35,14 @@
   padding-top: 43px;
 }
 
+.review__item--third,
+.review__item--second {
+  display: none;
+}
+
 .review__title {
   margin: auto;
-  width: 159px;
+  width: 160px;
   margin-bottom: 13px;
   font-size: 18px;
   line-height: 30px;
@@ -78,10 +83,13 @@
   }
 
   .review::before {
-    top: 248px;
+    top: 219px;
+    height: 270px;
   }
 
   .review__item {
+    position: relative;
+    z-index: 20;
     width: 100%;
     text-align: center;
     margin-bottom: 15px;
