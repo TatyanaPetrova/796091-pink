@@ -25,19 +25,18 @@
     <nav class="main-nav">
       <div class="main-nav__container">
         <div class="page-header__navigation">
-          <div class="page-header__navigation-wrapper">
-            <svg class="page-header__logo-image page-header__logo-image--small" width="74.426px" height="22.859px">
-              <use xlink:href="#logo-pink-white-mobile"></use>
-            </svg>
 
-            <svg class="page-header__logo-image page-header__logo-image--middle" width="146.3px" height="40.375px">
-              <use xlink:href="#logo-pink-white-tablet"></use>
-            </svg>
+          <svg class="page-header__logo-image page-header__logo-image--small" width="74.426px" height="22.859px">
+            <use xlink:href="#logo-pink-white-mobile"></use>
+          </svg>
 
-            <svg class="page-header__logo-image page-header__logo-image--large" width="146.3px" height="40.375px">
-              <use xlink:href="#logo-pink-white-desktop"></use>
-            </svg>
-          </div>
+          <svg class="page-header__logo-image page-header__logo-image--middle" width="146.3px" height="40.375px">
+            <use xlink:href="#logo-pink-white-tablet"></use>
+          </svg>
+
+          <svg class="page-header__logo-image page-header__logo-image--large" width="146.3px" height="40.375px">
+            <use xlink:href="#logo-pink-white-desktop"></use>
+          </svg>
 
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
           </button>
@@ -82,7 +81,7 @@
       <h2 class="visually-hidden">Скачайте наше приложение</h2>
       <div class="promo__wrapper">
         <p class="promo__intro">Взгляните на жизнь иначе!</p>
-        <a class="promo__download button button--download" href="/">Скачать приложение</a>
+        <a class="promo__download button button--download" href="https://www.apple.com/itunes/working-itunes/market/">Скачать приложение</a>
         <ul class="promo__list os-list">
           <li class="os-list__item">
             <a class="os-list__link" href="https://www.apple.com/itunes/working-itunes/market/">
@@ -123,7 +122,7 @@
       </div>
       <div class="features__wrapper">
         <div class="features__container">
-          <div class="features__images features-images__wrapper">
+          <div class="features__images features__images-wrapper">
             <picture>
               <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
               <img class="features__images" width="292" height="302" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png" alt="изображение приложения на телефоне">
@@ -202,43 +201,44 @@
           <use xlink:href="#icon-quotes"></use>
         </svg>
 
+        <button class="visually-hidden" type="button" id="button-backward"></button>
+        <label class="review__controls review__controls--left" for="button-backward"><span class="visually-hidden">Назад</span>
+          <svg class="review__icon review__icon--left" width="21.706px" height="41.719px">
+            <use xlink:href="#icon-review-arrow-left"></use>
+          </svg>
+        </label>
+
         <blockquote class="review__item">
           <cite class="review__title">Николай Петров<span class="review__title-sign">25 лет, водитель трамвая</span></cite>
-          <button class="visually-hidden" type="button" id="button-backward"></button>
-          <label class="review__controls review__controls--left" for="button-backward"><span class="visually-hidden">Назад</span>
-            <svg class="review__icon review__icon--left" width="21.706px" height="41.719px">
-              <use xlink:href="#icon-review-arrow-left"></use>
-            </svg>
-          </label>
 
           <p class="review__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
-
-          <button class="visually-hidden" type="button" id="button-forward"></button>
-          <label class="review__controls review__controls--right" for="button-forward"><span class="visually-hidden">Вперед</span>
-            <svg class="review__icon review__icon--right" width="21.706px" height="41.719px">
-              <use xlink:href="#icon-review-arrow-right"></use>
-            </svg>
-          </label>
-
         </blockquote>
+
         <blockquote class="review__item review__item--second">
           <cite class="review__title">Николай Петров<span class="review__title-sign">25 лет, водитель трамвая</span></cite>
 
           <p class="review__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
-
         </blockquote>
+
         <blockquote class="review__item review__item--third">
           <cite class="review__title">Николай Петров<span class="review__title-sign">25 лет, водитель трамвая</span></cite>
 
           <p class="review__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
-
         </blockquote>
+
+        <button class="visually-hidden" type="button" id="button-forward"></button>
+        <label class="review__controls review__controls--right" for="button-forward"><span class="visually-hidden">Вперед</span>
+          <svg class="review__icon review__icon--right" width="21.706px" height="41.719px">
+            <use xlink:href="#icon-review-arrow-right"></use>
+          </svg>
+        </label>
+
         <div class="review__toggle toggle-container">
 
           <input class="toggle-container__radio-button radio-button-1" type="radio" id="button-1" name="page" aria-label="Первая страница" checked="">
@@ -383,7 +383,7 @@
         <div class="contacts__wrapper">
           <p class="contacts__item contacts__item--call">Звоните: <span class="contacts__way">+7 (812) 555-66-66</span>
           </p>
-          <p class="contacts__item contacts__item--mail">Пишите: <span class="contacts__way contacts__way--mail">mail@htmlacademy.ru</span>
+          <p class="contacts__item contacts__item--mail">Пишите: <a href="/" class="contacts__way contacts__way--mail">mail@htmlacademy.ru</a>
           </p>
           <p class="contacts__item contacts__item--adress">Приезжайте в гости: <span class="contacts__way">ул. Большая Конюшенная,19/8</span>
           </p>
@@ -420,7 +420,7 @@
 
       <div class="page-footer__social-wrapper page-footer__social-wrapper--index">
         <ul class="page-footer__social-list social-list social-list--index">
-          <li class="page-footer__item social-item">
+          <li class="page-footer__item">
             <a class="page-footer__link social-list__social-button" href="#">
               <span class="visually-hidden">Твиттер</span>
               <svg class="social-list__icon" width="17.5px" height="14.663px">
@@ -428,7 +428,7 @@
               </svg>
             </a>
           </li>
-          <li class="page-footer__item social-item">
+          <li class="page-footer__item">
             <a class="page-footer__link social-list__social-button" href="#">
               <span class="visually-hidden">Фэйсбук</span>
               <svg class="social-list__icon social-list__icon--facebook" width="8.673px" height="18.944px">
@@ -436,7 +436,7 @@
               </svg>
             </a>
           </li>
-          <li class="page-footer__item social-item">
+          <li class="page-footer__item">
             <a class="page-footer__link social-list__social-button" href="#">
               <span class="visually-hidden">Ютуб</span>
               <svg class="social-list__icon social-list__icon--youtube" width="14.64px" height="13.96px">

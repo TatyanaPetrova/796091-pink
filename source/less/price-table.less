@@ -1,29 +1,90 @@
-.price-table__line--title {
-  background-color: @blue;
-}
-
-.price-table__line--content {
-  background-color: @white;
+.price-table {
+  border-collapse: collapse;
+  margin-bottom: 37px;
 }
 
 .price-table__item {
+  display: block;
+  .mobile-container();
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @blue;
+  border-left: 2px solid @gray;
+  border-right: 2px solid @gray;
 }
 
 .price-table__item--title {
-  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 21px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: 700;
   color: @white;
 }
 
 .price-table__item--price {
+  display: block;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  margin-top: 2px;
+}
+
+.price-table__item--title--hit {
+  position: relative;
+}
+
+.price-table__item--title--hit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74px;
+  height: 73px;
+  background-image: url("../img/bg-hit.svg");
+}
+
+.price-table__item--title--hit::before {
+  content: "ХИТ";
+  position: absolute;
+  z-index: 10;
+  top: 12px;
+  left: 9px;
+  transform: rotate(-45deg);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.price-table__item--content {
+  display: flex;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.price-table__item--content--large {
+  display: none;
+}
+
+.price-table__row {
+  width: 131px;
+  margin-left: 24px;
+  text-align: left;
+}
+
+.price-table__line--title {
+  background-color: @blue;
+}
+
+.price-table__line--content {
+  background-color: @white;
+  border-bottom: 2px solid @gray;
 }
 
 .price-table__item--column,
@@ -31,9 +92,155 @@
   display: none;
 }
 
+.price-table__image {
+  margin-left: 75px;
+  margin-top: 5px;
+}
+
+.price-table__image-no {
+  margin-top: 0;
+  margin-left: 77px;
+}
+
+.price-table__image-middle {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
+  .price-table {
+    .tablet-container();
+  }
+
+  .price-table__item {
+    width: 156px;
+    border-right: 1px solid @gray;
+    border-left: 1px solid @gray;
+  }
+
+  .price-table__line {
+    display: flex;
+    width: 620px;
+  }
+
+  .price-table__line--title {
+    background-color: transparent;
+  }
+
+  .price-table__item--empty {
+    position: relative;
+    z-index: -5;
+    background-color: @gray;
+  }
+
   .price-table__item--column,
   .price-table__item--empty {
     display: table-cell;
+  }
+
+  .price-table__line--content {
+    display: flex;
+  }
+
+  .price-table__item--content--large {
+    display: flex;
+  }
+
+  .price-table__image-middle {
+    display: inline-block;
+    margin-left: 47px;
+    margin-top: 2px;
+  }
+
+  .price-table__image {
+    display: none;
+  }
+
+  .price-table__item--title {
+    padding-top: 10px;
+    padding-bottom: 9px;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: @blue;
+  }
+
+  .price-table__item--title--hit::after {
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  .price-table__item--title--hit::before {
+    top: 3px;
+    left: 6px;
+    font-weight: 400;
+  }
+
+  .price-table__item--price {
+    margin-top: -2px;
+    font-size: 18px;
+  }
+
+  .price-table__item--content {
+    text-transform: none;
+    padding-top: 8px;
+    padding-bottom: 0;
+  }
+
+  .price-table__row {
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  
+  .price-table__line {
+    display: flex;
+    width: 940px;
+  }
+
+  .price-table__item--title {
+    margin: 0;
+    padding-top: 16px;
+    padding-left: 2px;
+    padding-bottom: 23px;
+    width: 231px;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .price-table__item--title--hit::before {
+    top: 12px;
+    left: 10px;
+  }
+
+  .price-table__item--title--hit::after {
+    top: 0;
+    left: 0;
+    background-size: cover;
+  }
+
+  .price-table__item--price {
+    margin-top: 2px;
+    margin-left: 4px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .price-table__item--content {
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 9px;
+    width: 233px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .price-table__row {
+    margin-left: 21px;
+    width: 100%;
+  }
+
+  .price-table__image-middle {
+    margin-left: 82px;
   }
 }
