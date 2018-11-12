@@ -112,7 +112,9 @@
   }
 
   .photos-list__item {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 19px;
     width: 300px;
   }
@@ -159,11 +161,10 @@
   }
 
   .photos-list__like-wrapper {
-    position: relative;
+    .tablet-container();
   }
 
   .photos-list__like {
-    position: absolute;
     bottom: 23px;
     left: 27px;
   }

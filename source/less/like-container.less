@@ -1,5 +1,4 @@
 .like-container {
-  position: relative;
   padding-bottom: 18px;
 }
 
@@ -18,8 +17,6 @@
 
 .like-container__button {
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .like-container__button::before {
@@ -35,43 +32,45 @@
 @media (min-width: @tablet-width) {
   .like-container__text {
     padding-bottom: 0;
-    margin-left: 0;
+    margin-left: 26px;
+    margin-top: -56px;
   }
 
   .like-container__text--main {
-    margin-left: 50px;
-    margin-top: -2px;
+    margin-top: -137px;
     width: 155px;
   }
 
   .like-container {
-    position: absolute;
     padding-bottom: 0;
     width: 155px;
   }
 
+  .like-container--main {
+    margin-left: 445px;
+  }
+
   .like-container__button::before {
-    left: 228px;
-    top: 15px;
+    left: 255px;
+    top: -41px;
   }
 
   .like-container__button--main::before {
-    left: 158px;
-    top: 13px;
+    left: 133px;
+    top: -122px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .like-container--main {
-    left: 738px;
-    width: 155px;
+    margin-left: 762px;
   }
 
   .like-container__text--main {
-    margin-top: 22px;
+    margin-top: -113px;
   }
 
   .like-container__button--main::before {
-    top: 37px;
+    top: -98px;
   }
 }
