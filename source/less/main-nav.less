@@ -4,12 +4,17 @@
   background-color: @blue;
 }
 
+.main-nav--close {
+  background-color: transparent;
+}
+
 .main-nav__container {
   position: relative;
   .mobile-container();
 }
 
 .main-nav__wrapper {
+  display: block;
   position: relative;
   top: 4px;
   width: 100%;
@@ -31,51 +36,6 @@
 
   cursor: pointer;
   border: none;
-}
-
-.main-nav__toggle--close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  width: 70px;
-  height: 50px;
-
-  background-color: transparent;
-
-  cursor: pointer;
-  border: none;
-}
-
-.main-nav__toggle--close::before {
-  content: "";
-
-  position: absolute;
-  top: 21px;
-  left: 18px;
-
-  width: 52px;
-  height: 4px;
-
-  background-color: @white;
-  box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
-}
-
-.main-nav__toggle--close:hover::before {
-  content: "";
-
-  position: absolute;
-  top: 21px;
-  left: 18px;
-
-  width: 52px;
-  height: 4px;
-
-  background-color: @pink;
-  box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
 }
 
 .main-nav__toggle::before,
@@ -116,13 +76,63 @@
   transform: rotate(-45deg);
 }
 
+
+.main-nav__wrapper--close {
+  display: none;
+}
+
+.main-nav__toggle--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  width: 70px;
+  height: 50px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav__toggle--close::before {
+  content: "";
+
+  position: absolute;
+  top: 21px;
+  left: 18px;
+
+  width: 52px;
+  height: 4px;
+
+  background-color: @white;
+  box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
+}
+
+.main-nav__toggle--close:hover::before {
+  content: "";
+
+  position: absolute;
+  top: 21px;
+  left: 18px;
+
+  width: 52px;
+  height: 4px;
+
+  background-color: @pink;
+  box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
+}
+
 .main-nav__image-wrap {
   .mobile-container();
   position: relative;
 }
 
 .main-nav__image {
-  position: absolute;
+  position: relative;
   top: 112px;
   left: -19px;
 }
@@ -130,6 +140,10 @@
 @media (min-width: @tablet-width) {
   .main-nav__container {
     .tablet-container();
+  }
+  
+  .main-nav__wrapper {
+    display: block;
   }
 
   .main-nav__image-wrap {
@@ -169,7 +183,7 @@
     top: 20px;
     left: 70px;
     width: 1050px;
-    height: 650px;
+    height: 648px;
   }
 
   .main-nav__toggle {

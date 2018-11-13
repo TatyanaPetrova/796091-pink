@@ -5,7 +5,7 @@
   padding-bottom: 30px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: auto 100%;
-  min-height: 465px;
+
   background-color: @blue;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -16,7 +16,7 @@
 
 .page-header__index {
   margin-bottom: -3px;
-  min-height: 688px;
+  padding-bottom: 105px;
 }
 
 .page-header__navigation {
@@ -28,7 +28,7 @@
 
 .page-header__wrapper {
   .mobile-container();
-  margin-top: 33px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -44,13 +44,11 @@
 .page-header__photo {
   margin: 0;
   margin-bottom: 45px;
-  padding-bottom: 31px;
+  padding-bottom: 82px;
   background-size: cover;
-  min-height: 463px;
 }
 
 .page-header__form {
-  min-height: 236px;
   margin: 0;
   margin-bottom: 45px;
   padding-bottom: 52px;
@@ -91,10 +89,10 @@
 @media (min-width: @tablet-width) {
   .page-header {
     margin-bottom: 8px;
-    padding-bottom: 0;
+    padding-bottom: 72px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
     background-size: auto 100%;
-    min-height: 985px;
+    background-color: @blue;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -133,11 +131,11 @@
 
   .page-header__photo {
     margin-bottom: 92px;
-    min-height: 694px;
+    padding-bottom: 92px;
   }
 
   .page-header__form {
-    min-height: 696px;
+    padding-bottom: 82px;
     margin-bottom: 90px;
   }
 
@@ -156,7 +154,6 @@
   .page-header {
     margin-bottom: 92px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
-    min-height: 850px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -167,6 +164,7 @@
   .page-header__index {
     min-height: 854px;
     margin-bottom: 26px;
+    padding-bottom: 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -191,12 +189,13 @@
   }
 
   .page-header__photo {
-    min-height: 394px;
+    padding-bottom: 100px;
   }
 
   .page-header__form {
     min-height: 394px;
     margin-bottom: 93px;
+    padding-bottom: 0;
   }
 
   .page-header__container {

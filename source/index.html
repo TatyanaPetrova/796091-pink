@@ -22,6 +22,8 @@
   </div>
 
   <header class="page-header page-header__index">
+
+    <!---Для того, чтобы изменить фон для закрытого меню, добавить класс main-nav--close у nav ниже --->
     <nav class="main-nav">
       <div class="main-nav__container">
         <div class="page-header__navigation">
@@ -38,12 +40,14 @@
             <use xlink:href="#logo-pink-white-desktop"></use>
           </svg>
 
+          <!---Для того, чтобы изменить кнопку, заменить класс main-nav__toggle у button ниже на класс main-nav__toggle-close --->
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-          </button>
-          <button class="main-nav__toggle--close" type="button" aria-label="Открыть меню">
           </button>
         </div>
       </div>
+
+
+      <!---Для того, чтобы скрыть меню, заменить класс main-nav__wrapper у div ниже на класс main-nav__wrapper-close --->
       <div class="main-nav__wrapper">
         <div class="main-nav__list-wrapper">
           <ul class="main-nav__list site-list">
@@ -81,36 +85,38 @@
   <main class="page-main">
     <section class="promo">
       <h2 class="visually-hidden">Скачайте наше приложение</h2>
-      <div class="promo__wrapper">
-        <p class="promo__intro">Взгляните на жизнь иначе!</p>
-        <a class="promo__download button button--download" href="https://www.apple.com/itunes/working-itunes/market/">Скачать приложение</a>
-        <ul class="promo__list os-list">
-          <li class="os-list__item">
-            <a class="os-list__link" href="https://www.apple.com/itunes/working-itunes/market/">
-              <span class="visually-hidden">Apple</span>
-              <svg class="os-list__image os-list__image--apple" width="46.21px" height="56.753px">
-                <use xlink:href="#logo-apple"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="os-list__item">
-            <a class="os-list__link" href="https://play.google.com/store">
-              <span class="visually-hidden">Android</span>
-              <svg class="os-list__image os-list__image--android" width="42.084px" height="47.041px">
-                <use xlink:href="#logo-android"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="os-list__item">
-            <a class="os-list__link" href="https://www.microsoft.com/ru-ru/store/apps?rtc=1">
-              <span class="visually-hidden">Windows</span>
-              <svg class="os-list__image os-list__image--windows" width="43.922px" height="41.992px">
-                <use xlink:href="#logo-microsoft"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <p class="promo__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="promo__container">
+        <div class="promo__wrapper">
+          <p class="promo__intro">Взгляните на жизнь иначе!</p>
+          <a class="promo__download button button--download" href="https://www.apple.com/itunes/working-itunes/market/">Скачать приложение</a>
+          <ul class="promo__list os-list">
+            <li class="os-list__item">
+              <a class="os-list__link" href="https://www.apple.com/itunes/working-itunes/market/">
+                <span class="visually-hidden">Apple</span>
+                <svg class="os-list__image os-list__image--apple" width="46.21px" height="56.753px">
+                  <use xlink:href="#logo-apple"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="os-list__item">
+              <a class="os-list__link" href="https://play.google.com/store">
+                <span class="visually-hidden">Android</span>
+                <svg class="os-list__image os-list__image--android" width="42.084px" height="47.041px">
+                  <use xlink:href="#logo-android"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="os-list__item">
+              <a class="os-list__link" href="https://www.microsoft.com/ru-ru/store/apps?rtc=1">
+                <span class="visually-hidden">Windows</span>
+                <svg class="os-list__image os-list__image--windows" width="43.922px" height="41.992px">
+                  <use xlink:href="#logo-microsoft"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="promo__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </section>
     <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>

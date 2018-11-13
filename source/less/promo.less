@@ -30,27 +30,33 @@
 
 @media (min-width: @tablet-width) {
   .promo {
-    position: absolute;
-    top: 125px;
-    z-index: 10;
+    position: relative;
+    padding: 0;
     background-color: transparent;
   }
 
-  .promo__wrapper {
+  .promo__container {
+    position: relative;
     .tablet-container();
     display: flex;
     flex-direction: column;
     width: 245px;
     padding-right: 349px;
-    margin-top: 271px;
+  }
+
+  .promo__wrapper {
+    position: absolute;
+    top: -537px;
+    z-index: 10;
+    width: auto;
   }
 
   .promo__intro {
     display: block;
     margin: 0;
     padding: 0;
-    margin-top: 60px;
-    margin-left: 30px;
+    margin-left: 42px;
+    width: 190px;
     text-align: center;
     font-size: 40px;
     line-height: 50px;
@@ -74,25 +80,30 @@
 
 @media (min-width: @desktop-width) {
   .promo__wrapper {
-    .desktop-container();
+    top: -662px;
     width: 330px;
     padding-right: 741px;
   }
 
+  .promo__container {
+    position: relative;
+    .desktop-container();
+  }
+
   .promo__intro {
-    margin-top: 92px;
-    margin-left: 97px;
+    margin-left: 30px;
+    width: 240px;
     font-size: 50px;
     line-height: 60px;
   }
 
   .promo__download {
-    margin-left: 66px;
+    margin-left: 0;
     margin-bottom: 67px;
     margin-top: 52px;
   }
 
   .promo__availability {
-    margin-left: 45px;
+    margin-left: -20px;
   }
 }
