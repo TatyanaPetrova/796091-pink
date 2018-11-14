@@ -43,22 +43,21 @@
 
 .contacts__way {
   margin-top: 3px;
+  text-decoration: none;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   color: @pink;
 }
 
-.contacts__way--mail {
-  text-decoration: none;
-}
-
-.contacts__way--mail:hover {
+.contacts__way--mail:hover,
+.contacts__way--call:hover {
   color: @blue;
   border-bottom: 1px solid @blue;
 }
 
-.contacts__way--mail:active {
+.contacts__way--mail:active,
+.contacts__way--call:active {
   color: #cdcfd1;
   border: none;
 }
@@ -67,6 +66,17 @@
   display: flex;
   flex-direction: column;
   margin-top: 32px;
+}
+
+.contacts__map-wrapper {
+  height: 216px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: cover;
+  background-position: center center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
 }
 
 .contacts__map-wrapper::after {
@@ -94,17 +104,12 @@
   border-radius: 50%;
 }
 
-.contacts__map {
-  width: 100%;
-  height: 216px;
-}
-
 .contacts__map--google {
   position: absolute;
   top: 369px;
   left: 0;
   width: 100%;
-  height: 203px;
+  height: 216px;
   border: 0;
 }
 
@@ -159,6 +164,12 @@
 
   .contacts__map-wrapper {
     position: relative;
+    height: 373px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 
   .contacts__map-wrapper::after {
@@ -179,16 +190,12 @@
     left: 312px;
   }
 
-  .contacts__map {
-    height: 373px;
-  }
-
   .contacts__map--google {
     position: absolute;
     top: -4px;
     left: 0;
     width: 100%;
-    height: 378px;
+    height: 377px;
     border: 0;
   }
 }
@@ -239,8 +246,13 @@
     width: 600px;
   }
 
-  .contacts__map {
-    height: 502px;
+  .contacts__map-wrapper {
+    height: 505px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 
   .contacts__map-wrapper::before {
@@ -254,6 +266,6 @@
   }
 
   .contacts__map--google {
-    height: 505px;
+    height: 509px;
   }
 }

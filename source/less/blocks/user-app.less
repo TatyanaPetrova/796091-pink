@@ -7,11 +7,11 @@
 }
 
 .user-app__sign {
-  position: relative;
-  display: inline-block;
+  .mobile-container();
   margin: auto;
   margin-bottom: 37px;
   padding-top: 42px;
+  width: 278px;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -71,12 +71,14 @@
 
 @media (min-width: @tablet-width) {
   .user-app {
+    .tablet-container();
     display: flex;
+    flex-wrap: wrap;
     order: -1;
     background-color: @white;
     margin-bottom: 65px;
   }
-
+  
   .user-app__sign {
     position: relative;
     margin-top: 0;
@@ -135,7 +137,10 @@
 @media (min-width: @desktop-width) {
   .user-app {
     display: flex;
+    flex-wrap: wrap;
     order: -1;
+    margin-left: 72px;
+    width: 433px;
     background-color: @white;
   }
 
@@ -145,12 +150,13 @@
     width: 433px;
     margin: 0;
     padding-bottom: 14px;
-    border: 2px solid @gray;
-    border-top: 0;
+    border: 0;
+    border-bottom: 2px solid @gray;
   }
 
   .user-app__sign {
     position: relative;
+    margin: auto;
     margin-bottom: 48px;
     width: 323px;
     text-align: center;
@@ -160,7 +166,7 @@
     content: "";
     position: absolute;
     width: 33px;
-    height: 150px;
+    height: 298px;
     top: 7px;
     left: -57px;
     background-color: transparent;
@@ -172,7 +178,7 @@
     content: "";
     position: absolute;
     width: 33px;
-    height: 150px;
+    height: 298px;
     top: 7px;
     right: -57px;
     background-color: transparent;
