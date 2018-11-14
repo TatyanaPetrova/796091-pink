@@ -23,11 +23,15 @@
 .feedback-form__user-data {
   display: inline-block;
   box-sizing: border-box;
-  height: 63px;
   width: 280px;
+  height: auto;
   padding-left: 20px;
-  padding-top: 23px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @blue;
   border: 2px solid @gray;
 }
 
@@ -93,7 +97,7 @@
 .feedback-form__comment {
   box-sizing: border-box;
   width: 100%;
-  height: 195px;
+  height: 202px;
   padding-top: 15px;
   padding-left: 20px;
   padding-bottom: 87px;
@@ -195,7 +199,7 @@
   .feedback-form__item--contact {
     flex-direction: column-reverse;
     margin-left: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     width: 384px;
   }
 
@@ -206,7 +210,7 @@
 
   .feedback-form__user-data {
     padding-left: 21px;
-    padding-top: 22px;
+    padding-top: 16px;
     width: 525px;
   }
 
@@ -229,9 +233,9 @@
   }
 
   .feedback-form__user-data--contact {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     padding-left: 17px;
-    padding-top: 24px;
+    padding-top: 16px;
     width: 500px;
   }
 
@@ -274,11 +278,20 @@
     margin: auto;
     padding-bottom: 79px;
     width: 500px;
+    height: 195px;
+  }
+
+  .feedback-form__comment:hover {
+    border: 2px solid @blue;
+  }
+
+  .feedback-form__comment:active {
+    border: 2px solid @pink;
   }
 
   .feedback-form__comment-block {
-    padding-bottom: 50px;
-    margin-bottom: 67px;
+    padding-bottom: 49px;
+    margin-bottom: 66px;
     border-bottom: 2px solid @gray;
   }
 
@@ -297,6 +310,7 @@
 
   .feedback-form__button {
     margin-bottom: 33px;
+    height: 65px;
   }
 }
 
@@ -385,8 +399,8 @@
     box-sizing: border-box;
     width: 338px;
     padding-left: 20px;
-    padding-top: 23px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 15px;
     border: 2px solid @gray;
   }
 
@@ -416,7 +430,6 @@
   }
 
   .feedback-form__user-data--contact {
-    padding-bottom: 20px;
     padding-left: 17px;
     margin-bottom: 10px;
     width: 373px;

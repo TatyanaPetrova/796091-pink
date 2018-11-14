@@ -22,28 +22,32 @@
   </div>
 
   <header class="page-header page-header__form">
+    <!---Для того, чтобы изменить фон для закрытого меню, добавить класс main-nav--close у nav ниже --->
     <nav class="main-nav">
       <div class="main-nav__container">
         <div class="page-header__navigation">
-          <div class="page-header__navigation-wrapper">
-            <a class="page-header__logo-link" href="index.html">
-              <svg class="page-header__logo-image page-header__logo-image--small" width="74.426px" height="22.859px">
-                <use xlink:href="#logo-pink-white-mobile"></use>
-              </svg>
 
-              <svg class="page-header__logo-image page-header__logo-image--middle" width="146.3px" height="40.375px">
-                <use xlink:href="#logo-pink-white-tablet"></use>
-              </svg>
+          <a class="page-header__logo-link" href="index.html">
+            <svg class="page-header__logo-image page-header__logo-image--small" width="74.426px" height="22.859px">
+              <use xlink:href="#logo-pink-white-mobile"></use>
+            </svg>
 
-              <svg class="page-header__logo-image page-header__logo-image--large" width="146.3px" height="40.375px">
-                <use xlink:href="#logo-pink-white-desktop"></use>
-              </svg>
-            </a>
-          </div>
+            <svg class="page-header__logo-image page-header__logo-image--middle" width="146.3px" height="40.375px">
+              <use xlink:href="#logo-pink-white-tablet"></use>
+            </svg>
+
+            <svg class="page-header__logo-image page-header__logo-image--large" width="146.3px" height="40.375px">
+              <use xlink:href="#logo-pink-white-desktop"></use>
+            </svg>
+          </a>
+
+          <!---Для того, чтобы изменить кнопку, заменить класс main-nav__toggle у button ниже на класс main-nav__toggle-close --->
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
           </button>
         </div>
       </div>
+
+      <!---Для того, чтобы скрыть меню, заменить класс main-nav__wrapper у div ниже на класс main-nav__wrapper-close --->
       <div class="main-nav__wrapper">
         <div class="main-nav__list-wrapper">
           <ul class="main-nav__list site-list">
@@ -94,7 +98,7 @@
             </p>
           </div>
           <fieldset class="user-form__user-record user-record">
-            <legend class="user-record__sign">Ваши безбашенные достижения в путешествии</legend>
+            <h3 class="user-record__sign">Ваши безбашенные достижения в путешествии</h3>
             <div class="user-record__wrapper">
               <div class="user-record__wrap">
                 <ul class="user-record__list">
@@ -160,7 +164,7 @@
           </div>
 
           <fieldset class="user-form__user-app user-app">
-            <legend class="user-app__sign">C каким приложением путешествовали?</legend>
+            <h3 class="user-app__sign">C каким приложением путешествовали?</h3>
             <div class="user-form__wrapper user-app__container">
               <div class="user-app__wrapper">
                 <ul class="user-app__list">

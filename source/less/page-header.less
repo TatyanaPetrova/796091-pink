@@ -5,7 +5,8 @@
   padding-bottom: 30px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: auto 100%;
-  min-height: 465px;
+
+  background-color: @blue;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -15,17 +16,19 @@
 
 .page-header__index {
   margin-bottom: -3px;
-  min-height: 688px;
+  padding-bottom: 105px;
 }
 
 .page-header__navigation {
   position: relative;
+  padding: 0;
   padding-bottom: 14px;
+  background-color: transparent;
 }
 
 .page-header__wrapper {
   .mobile-container();
-  margin-top: 33px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -41,15 +44,14 @@
 .page-header__photo {
   margin: 0;
   margin-bottom: 45px;
-  padding-bottom: 31px;
+  padding-bottom: 82px;
   background-size: cover;
 }
 
 .page-header__form {
-  min-height: 236px;
   margin: 0;
   margin-bottom: 45px;
-  padding-bottom: 51px;
+  padding-bottom: 52px;
   background-size: cover;
 }
 
@@ -87,10 +89,10 @@
 @media (min-width: @tablet-width) {
   .page-header {
     margin-bottom: 8px;
-    padding-bottom: 0;
+    padding-bottom: 72px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
     background-size: auto 100%;
-    min-height: 979px;
+    background-color: @blue;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -100,7 +102,7 @@
 
   .page-header__navigation {
     padding-bottom: 32px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
   }
 
   .page-header__wrapper {
@@ -109,6 +111,7 @@
   }
 
   .page-header__logo-image {
+    margin-top: 27px;
     height: 40px;
     width: 148px;
   }
@@ -128,11 +131,11 @@
 
   .page-header__photo {
     margin-bottom: 92px;
-    min-height: 689px;
+    padding-bottom: 92px;
   }
 
   .page-header__form {
-    min-height: 690px;
+    padding-bottom: 82px;
     margin-bottom: 90px;
   }
 
@@ -151,7 +154,6 @@
   .page-header {
     margin-bottom: 92px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
-    min-height: 850px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -162,6 +164,7 @@
   .page-header__index {
     min-height: 854px;
     margin-bottom: 26px;
+    padding-bottom: 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -186,12 +189,13 @@
   }
 
   .page-header__photo {
-    min-height: 394px;
+    padding-bottom: 100px;
   }
 
   .page-header__form {
     min-height: 394px;
     margin-bottom: 93px;
+    padding-bottom: 0;
   }
 
   .page-header__container {
@@ -200,12 +204,17 @@
     width: 960px;
   }
 
+  .page-header__navigation {
+    padding: 0;
+  }
+
   .page-header__toggle {
     display: none;
   }
 
   .page-header__logo-image {
-    padding-top: 6px;
+    margin-top: 0;
+    padding-top: 27px;
   }
 
   .page-header__logo-image--small,

@@ -83,7 +83,7 @@
   }
 
   .review::before {
-    top: 219px;
+    top: 188px;
     height: 270px;
   }
 
@@ -125,11 +125,12 @@
 
 @media (min-width: @desktop-width) {
   .review::before {
-    top: 312px;
+    top: 250px;
   }
 
   .review__container {
     .desktop-container();
+    position: relative;
   }
 
   .review__quote {
@@ -156,16 +157,16 @@
     position: absolute;
     display: inline-block;
     cursor: pointer;
+    z-index: 100;
   }
 
   .review__controls--left {
-    top: 28px;
-    left: 0;
+    top: 144px;
   }
 
   .review__controls--right {
-    top: 28px;
-    right: 0;
+    left: 918px;
+    top: 144px;
   }
 
   .review__icon {

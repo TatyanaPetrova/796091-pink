@@ -22,6 +22,7 @@
   </div>
 
   <header class="page-header page-header__photo">
+    <!---Для того, чтобы изменить фон для закрытого меню, добавить класс main-nav--close у nav ниже --->
     <nav class="main-nav">
       <div class="main-nav__container">
         <div class="page-header__navigation">
@@ -39,11 +40,13 @@
             </svg>
           </a>
 
+          <!---Для того, чтобы изменить кнопку, заменить класс main-nav__toggle у button ниже на класс main-nav__toggle-close --->
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
           </button>
         </div>
       </div>
 
+      <!---Для того, чтобы скрыть меню, заменить класс main-nav__wrapper у div ниже на класс main-nav__wrapper-close --->
       <div class="main-nav__wrapper">
         <div class="main-nav__list-wrapper">
           <ul class="main-nav__list site-list site-list--photo">
@@ -141,7 +144,7 @@
 
           <li class="photos-list__item">
             <figure class="photos-list__post">
-              <a class="photos-list__photo-link" href="/">
+              <a class="photos-list__photo-link" href="photo-1.html">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
@@ -167,7 +170,7 @@
 
           <li class="photos-list__item">
             <figure class="photos-list__post">
-              <a class="photos-list__photo-link" href="/">
+              <a class="photos-list__photo-link" href="photo-2.html">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
@@ -194,7 +197,7 @@
 
           <li class="photos-list__item">
             <figure class="photos-list__post">
-              <a class="photos-list__photo-link" href="/">
+              <a class="photos-list__photo-link" href="photo-3.html">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
@@ -221,7 +224,7 @@
 
           <li class="photos-list__item">
             <figure class="photos-list__post">
-              <a class="photos-list__photo-link" href="/">
+              <a class="photos-list__photo-link" href="photo-4.html">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
@@ -248,7 +251,7 @@
 
           <li class="photos-list__item">
             <figure class="photos-list__post">
-              <a class="photos-list__photo-link" href="/">
+              <a class="photos-list__photo-link" href="photo-5.html">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
@@ -283,21 +286,21 @@
         <p class="photo-editor__intro">Затмите их всех!</p>
         <p class="photo-editor__intro">Выкладывайте все, что накопилось в телефоне</p>
       </div>
-      <div class="photo-editor__wrapper">
-        <div class="photo-editor__container editor">
-          <div class="editor__image-wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="photo-editor__wrapper">
+          <div class="photo-editor__container editor">
+            <div class="editor__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
-              <img class="editor__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="фотография">
-            </picture>
-          </div>
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+                <img class="editor__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="фотография">
+              </picture>
+            </div>
 
-          <div class="editor__icon-wrapper">
             <div class="editor__icon-container">
               <svg class="editor__icon editor__icon--crop" width="48px" height="48px">
                 <use xlink:href="#icon-editor-crop"></use>
@@ -311,47 +314,48 @@
                 <use xlink:href="#icon-editor-contrast"></use>
               </svg>
             </div>
-          </div>
-          <form class="editor__form" action="https://echo.htmlacademy.ru" method="post">
 
-            <fieldset class="editor__editor-filter">
-              <legend class="editor-sign"><span class="visually-hidden">Обрезка</span></legend>
-              <div class="editor__range-wrapper">
+            <div class="editor__form">
+
+              <fieldset class="editor__editor-filter">
+                <legend class="editor-sign"><span class="visually-hidden">Обрезка</span></legend>
+
                 <div class="editor__range-line">
                   <button class="visually-hidden" type="button" id="swich-crop"></button>
                   <label class="editor__switch editor__switch--crop" for="swich-crop"></label>
                 </div>
-              </div>
-            </fieldset>
+
+              </fieldset>
 
 
-            <fieldset class="editor__editor-filter editor__editor-filter--large">
-              <legend class="editor-sign"><span class="visually-hidden">Заливка</span></legend>
-              <div class="editor__range-wrapper">
+              <fieldset class="editor__editor-filter editor__editor-filter--large">
+                <legend class="editor-sign"><span class="visually-hidden">Заливка</span></legend>
+
                 <div class="editor__range-line">
                   <button class="visually-hidden" type="button" id="swich-fill"></button>
                   <label class="editor__switch editor__switch--fill" for="swich-fill"></label>
                 </div>
-              </div>
-            </fieldset>
+
+              </fieldset>
 
 
-            <fieldset class="editor__editor-filter editor__editor-filter--large">
-              <legend class="editor-sign"><span class="visually-hidden">Контрастность</span></legend>
-              <div class="editor__range-wrapper">
+              <fieldset class="editor__editor-filter editor__editor-filter--large">
+                <legend class="editor-sign"><span class="visually-hidden">Контрастность</span></legend>
+
                 <div class="editor__range-line">
                   <button class="visually-hidden" type="button" id="swich-contrast"></button>
                   <label class="editor__switch editor__switch--contrast" for="swich-contrast"></label>
                 </div>
+
+              </fieldset>
+              <div class="editor__button-wrapper">
+                <button class="editor__button button button--post" type="submit">Запостить</button>
+                <button class="editor__button button button--cancel" type="reset">Отмена</button>
               </div>
-            </fieldset>
-            <div class="editor__button-wrapper">
-              <button class="editor__button button button--post" type="submit">Запостить</button>
-              <button class="editor__button button button--cancel" type="submit">Отмена</button>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
+      </form>
     </section>
   </main>
 
