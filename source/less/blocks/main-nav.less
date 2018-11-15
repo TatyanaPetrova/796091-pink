@@ -76,12 +76,11 @@
   transform: rotate(-45deg);
 }
 
-
-.main-nav__wrapper--close {
+.main-nav--close .main-nav__wrapper {
   display: none;
 }
 
-.main-nav__toggle--close {
+.main-nav--close .main-nav__toggle {
   position: absolute;
   top: 0;
   right: 0;
@@ -98,7 +97,11 @@
   border: none;
 }
 
-.main-nav__toggle--close::before {
+.main-nav--close .main-nav__toggle::after {
+  display: none;
+}
+
+.main-nav--close .main-nav__toggle::before {
   content: "";
 
   position: absolute;
@@ -107,12 +110,13 @@
 
   width: 52px;
   height: 4px;
+  transform: rotate(0deg);
 
   background-color: @white;
   box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
 }
 
-.main-nav__toggle--close:hover::before {
+.main-nav--close .main-nav__toggle:hover::before {
   content: "";
 
   position: absolute;
