@@ -17,10 +17,10 @@
 .page-header__index {
   margin-bottom: -3px;
   padding-bottom: 105px;
-  background-size: 100%;
+  background-size: cover;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-size: 100%;
+    background-size: cover;
   }
 }
 
@@ -33,7 +33,7 @@
 
 .page-header__wrapper {
   .mobile-container();
-  margin-top: 31px;
+  margin-top: 32px;
   text-align: center;
 }
 
@@ -112,6 +112,10 @@
       background-size: 100%;
     }
   }
+  
+  .page-header__index {
+    padding-bottom: 0;
+  }
 
   .page-header__navigation {
     padding-bottom: 32px;
@@ -175,7 +179,7 @@
   }
 
   .page-header__index {
-    min-height: 854px;
+    min-height: 840px;
     margin-bottom: 26px;
     padding-bottom: 0;
 

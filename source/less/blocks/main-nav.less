@@ -139,6 +139,7 @@
   position: relative;
   top: 112px;
   left: -19px;
+  max-width: initial;
 }
 
 @media (min-width: @tablet-width) {
@@ -153,13 +154,16 @@
   .main-nav__image-wrap {
     .tablet-container();
     position: relative;
-    width: 700px;
+    padding-bottom: 70px;
+    width: 660px;
+    overflow: hidden;
   }
 
   .main-nav__image {
     top: 78px;
     width: 700px;
     height: 545px;
+    max-width: initial;
   }
 
   .main-nav__toggle {
@@ -190,7 +194,9 @@
 
   .main-nav__image-wrap {
     .desktop-container();
+    padding-bottom: 11px;
     width: 960px;
+    overflow: hidden;
   }
 
   .main-nav__image {
@@ -198,6 +204,7 @@
     left: 33px;
     width: 1040px;
     height: 648px;
+    max-width: initial;
   }
 
   .main-nav .main-nav__toggle {
