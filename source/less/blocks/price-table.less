@@ -32,11 +32,11 @@
   margin-top: 2px;
 }
 
-.price-table__item--title--hit {
+.price-table__item--title-hit {
   position: relative;
 }
 
-.price-table__item--title--hit::after {
+.price-table__item--title-hit::after {
   content: "";
   position: absolute;
   top: 0;
@@ -46,7 +46,7 @@
   background-image: url("../img/bg-hit.svg");
 }
 
-.price-table__item--title--hit::before {
+.price-table__item--title-hit::before {
   content: "ХИТ";
   position: absolute;
   z-index: 10;
@@ -69,7 +69,7 @@
   text-transform: uppercase;
 }
 
-.price-table__item--content--large {
+.price-table__item--content-large {
   display: none;
 }
 
@@ -142,7 +142,7 @@
     display: flex;
   }
 
-  .price-table__item--content--large {
+  .price-table__item--content-large {
     display: flex;
   }
 
@@ -164,12 +164,12 @@
     background-color: @blue;
   }
 
-  .price-table__item--title--hit::after {
+  .price-table__item--title-hit::after {
     background-image: url("../img/bg-hit-tablet.svg");
     background-repeat: no-repeat;
   }
 
-  .price-table__item--title--hit::before {
+  .price-table__item--title-hit::before {
     top: 3px;
     left: 6px;
     font-weight: 400;
@@ -208,12 +208,12 @@
     text-transform: uppercase;
   }
 
-  .price-table__item--title--hit::before {
+  .price-table__item--title-hit::before {
     top: 12px;
     left: 10px;
   }
 
-  .price-table__item--title--hit::after {
+  .price-table__item--title-hit::after {
     top: 0;
     left: 0;
     background-size: cover;

@@ -165,22 +165,32 @@
   .main-nav__toggle {
     top: 26px;
   }
+  
+  .main-nav--close .main-nav__toggle {
+    top: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav--close {
+    display: none;
+  }
+
   .main-nav {
+    display: block;
     margin: 0;
     background-color: transparent;
   }
 
-  .main-nav__container {
+  .main-nav .main-nav__container {
+    display: block;
     .desktop-container();
     position: relative;
   }
 
   .main-nav__image-wrap {
     .desktop-container();
-   width: 960px;
+    width: 960px;
   }
 
   .main-nav__image {
@@ -190,7 +200,7 @@
     height: 648px;
   }
 
-  .main-nav__toggle {
+  .main-nav .main-nav__toggle {
     display: none;
   }
 
@@ -199,7 +209,7 @@
     position: relative;
   }
 
-  .main-nav__wrapper {
+  .main-nav .main-nav__wrapper {
     display: flex;
     top: -75px;
     padding-top: 23px;
