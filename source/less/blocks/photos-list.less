@@ -1,4 +1,7 @@
 .photos-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -30,15 +33,28 @@
 }
 
 .photos-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
   margin-bottom: 21px;
   background-color: @gray;
 }
 
 .photos-list__item--first {
+  width: 100%;
   background-color: @white;
 }
 
+.photos-list__post {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+}
+
 .photos-list__sign {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   padding-top: 11px;
@@ -47,12 +63,19 @@
 }
 
 .photos-list__sign--main {
-  padding-top: 18px;
+  padding-top: 19px;
 }
 
 .photos-list__post {
   margin: 0;
   padding: 0;
+}
+
+.photos-list__label {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .photos-list__image {
@@ -95,6 +118,9 @@
 
 .photos-list__like {
   display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .photos-list__like-wrapper {
@@ -110,6 +136,10 @@
     list-style: none;
     justify-content: space-between;
   }
+  
+  .photos-list__label--long {
+    padding-bottom: 22px;
+  }
 
   .photos-list__item {
     display: flex;
@@ -120,28 +150,27 @@
   }
 
   .photos-list__item--first {
+    margin-bottom: 49px;
     width: 100%;
-  }
-
-  .photos-list__caption {
-    padding-bottom: 25px;
   }
 
   .photos-list__wrap {
     .tablet-container();
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .photos-list__sign {
     padding-top: 16px;
     padding-left: 29px;
-    padding-bottom: 59px;
+    padding-bottom: 13px;
   }
 
   .photos-list__sign--main {
-    padding-top: 31px;
-    padding-bottom: 24px;
-    margin-bottom: 32px;
-    margin-top: -7px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    margin-top: -40px;
   }
 
   .photos-list__image {
@@ -160,13 +189,18 @@
     top: -453px;
   }
 
+  .photos-list__like {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
   .photos-list__like-wrapper {
-    .tablet-container();
+    align-self: flex-end;
+    padding-top: 26px;
+    width: 155px;
   }
 
   .photos-list__like--main {
-    top: -135px;
-    left: 441px;
     background-color: transparent;
   }
 }
